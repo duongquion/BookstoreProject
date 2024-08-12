@@ -1,0 +1,72 @@
+﻿@model IEnumerable<ProjectBookStores.EF.Order>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<style>
+    .table-hover a {
+        padding: 9px 13px;
+        background-color: #36344D;
+        color: #fff;
+    }
+
+    .card-title {
+        color: #36344D;
+        font-size: 22px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+        .table-hover a:hover {
+            text-decoration: none;
+        }
+
+    .table tbody, .table td, .table tfoot, .table th, .table thead, .table tr, .table > :not(:last-child) > :last-child > * {
+        border-color: var(--bs-border-color);
+        height: 55px;
+    }
+</style>
+@if (ViewBag.PermissionId == 10003)
+{
+    <div class="row">
+        <div class="col-12 col-lg-8 col-xxl-12 d-flex">
+            <div class="card flex-fill">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">ĐƠN HÀNG ĐÃ XÁC NHẬN</h5>
+                </div>
+                <table class="table table-hover my-0">
+                    <thead>
+                        <tr>
+                            <th class="d-none d-md-table-cell">Mã đơn hàng</th>
+                            <th class="d-none d-xl-table-cell">Ngày đặt hàng</th>
+                            <th class="d-none d-xl-table-cell">Ngày giao hàng dự kiến</th>
+                           
+                            <th>Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td class="d-none d-xl-table-cell">@item.Code</td>
+                                <td><span class="badge bg-success">@((item.OrderDate ?? DateTime.MinValue).Date.ToString("dd/MM/yyyy"))</span></td>
+                                <td><span>@((item.OrderDelivery ?? DateTime.MinValue).Date.ToString("dd/MM/yyyy"))</span></td>
+                                <td class="d-none d-md-table-cell">
+                                    <form asp-action="ToggleOrderStatus" method="post" asp-route-id="@item.Id">
+                                        <a asp-controller="Order" asp-action="customerOrderDetail" asp-route-id="@item.Id">Chi tiết</a>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <p>Bạn không có quyền</p>
+}
+

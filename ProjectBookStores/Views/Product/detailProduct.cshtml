@@ -1,0 +1,407 @@
+﻿@using System.Security.Claims;
+@using System.Xml.Linq
+@{
+    ViewData["Title"] = "detailProduct";
+    Layout = "~/Views/Shared/AllProductTemplate.cshtml";
+    var book = (ProjectBookStores.EF.Book)ViewBag.Book;
+    var genre = (ProjectBookStores.EF.BooksGenre)ViewBag.Genre;
+    var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+    var userId = userIdClaim != null ? userIdClaim.Value : "unknown";
+    var moreImages = new List<string>();
+    if (!string.IsNullOrEmpty(book.MoreImages))
+    {
+        var moreImagesXml = XDocument.Parse(book.MoreImages);
+        moreImages = moreImagesXml.Descendants("Image").Select(img => img.Value).ToList();
+    }
+    var formatMoney = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
+}
+<style>
+    .product-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 70px;
+    margin-top: 50px;
+  }
+  
+  /* .img-card{
+      width: 40%;
+  } */
+  .img-card{
+    display: flex;
+    gap: 40px;
+  }
+
+  .img-card img {
+    width: 600px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    height: 720px;
+    object-fit: cover;
+  }
+  
+  .small-Card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .small-Card img {
+    width: 104px;
+    height: 104px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .small-Card img:active {
+    border: 1px solid #36344D;
+  }
+  
+  .sm-card {
+    border: 2px solid #36344D;
+  }
+  
+  .product-info{
+    max-width: 25%;
+  }
+  .product-info h3 {
+    font-size: 32px;
+    font-family: "SVN-Poppins", sans-serif;
+    font-weight: 600;
+    line-height: 130%;
+  }
+
+  .product-info h4{
+    font-size: 24px;
+    font-family: "SVN-Poppins", sans-serif;
+    font-weight: 400;
+    line-height: 130%;
+  }
+  
+  .product-info h5 {
+    font-size: 26px;
+    font-family: "SVN-Poppins", sans-serif;
+    font-weight: 600;
+    line-height: 130%;
+    color: rgb(237, 74, 54);
+    margin: 6px 0;
+  }
+  
+  .product-info del {
+    color: #a9a9a9;
+    font-weight: 400;
+    font-size: 15px;
+    margin-left: 10px;
+  }
+
+  .product-info .rating ul{
+    display: flex;
+    gap: 4px
+  }
+
+  .product-info .rating li{
+    color: rgb(250, 175, 0);
+    cursor: pointer;
+    padding-top: 14px;
+    font-size: 20px;
+  }
+
+  .product-info .rating p{
+    font-weight: 400;
+    color: #36344D;
+    margin-left: 15px;
+    font-size: 18px;
+  }
+  
+  .product-info .sale{
+    background-color:rgb(237, 74, 54);
+    max-width: 120px;
+    border-radius: 5px;
+  }
+
+  .product-info .sale p{
+    color: #fff;
+    padding: 7px;
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .product-info p {
+    color: #424551;
+    margin: 15px 0;
+  }
+
+  .dashed-line {
+    border-top: 2px dashed #9E9E9E;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.gift{
+    display: flex;
+    gap: 10px;
+} 
+  .sizes p {
+    font-size: 16px;
+    color: black;
+    line-height: 20px;
+  }
+
+.quantity{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+  
+.quantity p{
+    font-size: 18px;
+    font-weight: 600;
+    color: #36344D;
+}
+  
+.quantity-container {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    border: 1px solid #36344D;
+    width: 125px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.quantity-button {
+    width: 40px;
+    height: 40px;
+    color: #36344D;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.quantity-button:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.quantity-button:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.quantity-button:hover {
+    background-color: #36344D;
+    color: #ffffff;
+}
+
+.quantity-input {
+    width: 45px;
+    height: 38px;
+    text-align: center;
+    font-size: 16px;
+    color: #36344D;
+    border: none;
+    margin: 0;
+    pointer-events: none;
+}
+
+.quantity-input:focus {
+    outline: none;
+}
+
+.activity-button{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.addtocart-favorite button {
+    background: #36344D;
+    border-radius: 5px;
+    padding: 10px 10px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    height: 60px;
+    width: 180px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    border-radius: 5px;
+    border: 2px solid #36344D;
+    color: #36344D;
+    background-color: #fff;
+    transition: ease-in 0.2s;
+  }
+  
+  .Description ul, li{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+  }
+  
+  
+  media screen and (max-width: 576px) {
+    .product-container{
+      flex-direction: column;
+    }
+    .small-Card img{
+      width: 80px;
+    }
+    .product-info{
+      width: 100%;
+    }
+    .product-info p{
+      width: 100%;
+    }
+  
+    .delivery{
+      width: 100%;
+    }
+  
+    hr{
+      width: 100%;
+    }
+  }
+</style>
+@section pagination {
+    <div class="pagination">
+        <div class="container">
+            <div class="content">
+                <span class="ri-home-line"></span>
+                <div class="name">Trang chủ</div>
+            </div>
+            <div class="content">
+                <span class="ri-book-line"></span>
+                <div class="name">Tất cả sách</div>
+            </div>
+            <div class="content">
+                <span class="ri-book-line"></span>
+                <div class="name">@book.Name | Thể loại: @genre.Name</div>
+            </div>
+        </div>
+    </div>
+}
+<section class="product-container">
+    <!-- left side -->
+    <div class="img-card">
+        <div class="small-Card">
+            @foreach (var item in moreImages)
+            {
+                <img src="@item" alt="" class="small-Img">
+            }
+        </div>
+        <img src="@book.Images" alt="" id="featured-image">
+    </div>
+    <!-- Right side -->
+    <div class="product-info">
+        <div class="sale">
+            <p>Khuyến mãi 30%</p>
+        </div>
+        <h3>@book.Name</h3>
+        <h4>@book.AuthorName</h4>
+        <div class="rating">
+            <ul>
+                <li class="ri-star-fill"></li>
+                <li class="ri-star-fill"></li>
+                <li class="ri-star-fill"></li>
+                <li class="ri-star-fill"></li>
+                <li class="ri-star-fill"></li>
+                <p>2 đánh giá</p>
+            </ul>
+        </div>
+        <h5>@String.Format(formatMoney, "{0:c0}", book.Price) <del>@String.Format(formatMoney, "{0:c0}", book.IntialPrice)</del></h5>
+        <div class="dashed-line"></div>
+        <h4>Tóm tắt:</h4>
+        <p>@book.Description</p>
+        <div class="dashed-line"></div>
+        <div class="sizes">
+            <h4>Khuyến mãi cho bạn</h4>
+            <div class="gift">
+                <img src="/Assets/Customer/Assets/giftbox.svg" alt="">
+                <p>Nhập mã ... để được giảm thêm 10% cho đơn hàng từ 235.000đ</p>
+            </div>
+            <div class="gift">
+                <img src="/Assets/Customer/Assets/giftbox.svg" alt="">
+                <p>Nhập mã ... để được giảm thêm 20% cho đơn hàng từ 335.000đ</p>
+            </div>
+        </div>
+        <div class="dashed-line"></div>
+
+        <form asp-controller="Cart" asp-action="addToCart" asp-route-id="@book.Id" asp-route-cusid="@userId">
+            <div class="quantity">
+                <p>Chọn số lượng:</p>
+                <div class="quantity-container">
+                    <button type="button" class="quantity-button" onclick="decreaseQuantity(this)">-</button>
+                    <input type="text" class="quantity-input" value="1" min="1" name="quantity" readonly>
+                    <button type="button" class="quantity-button" onclick="increaseQuantity(this)">+</button>
+                </div>
+            </div>
+            <div class="activity-button">
+                <div class="addtocart-favorite">
+                    <button type="submit"><span class="ri-shopping-cart-line"></span>Thêm giỏ hàng</button>
+                </div>
+        </form>
+        <div class="addtocart-favorite">
+            @using (Html.BeginForm("insertFavorite", "FavoriteProduct", FormMethod.Post))
+            {
+                @Html.ValidationSummary(true)
+
+                <input name="CustomerId" value="@userId" type="hidden" />
+                <input name="BookId" value="@book.Id" type="hidden" />
+                <button type="submit"><span class="ri-heart-add-2-line"> </span>Yêu thích</button>
+            }
+        </div>
+    </div>
+    <div class="dashed-line"></div>
+    <div class="Description">
+        <h4>Mô tả</h4>
+        <ul>
+            <li><p>NXB: @book.Publisher</p></li>
+            <li><p>Ngôn ngữ: @book.Language</p></li>
+        </ul>
+        <ul>
+            <li><p>Năm xuất bản: @book.PublishingYear</p></li>
+            <li><p>Số trang: 567 trang</p></li>
+        </ul>
+    </div>
+    </div>
+</section>
+<script>
+    function increaseQuantity(button) {
+        var quantityInput = button.previousElementSibling;
+        var currentValue = parseInt(quantityInput.value);
+        quantityInput.value = currentValue + 1;
+    }
+
+    function decreaseQuantity(button) {
+        var quantityInput = button.nextElementSibling;
+        var currentValue = parseInt(quantityInput.value);
+        if (currentValue > 1) {
+            quantityInput.value = currentValue - 1;
+        }
+    }
+    let featuedImg = document.getElementById('featured-image');
+    let smallImgs = document.getElementsByClassName('small-Img');
+
+    for (let i = 0; i < smallImgs.length; i++) {
+        smallImgs[i].addEventListener('click', () => {
+            featuedImg.src = smallImgs[i].src;
+            for (let j = 0; j < smallImgs.length; j++) {
+                if (i === j) {
+                    smallImgs[j].classList.add('sm-card');
+                } else {
+                    smallImgs[j].classList.remove('sm-card');
+                }
+            }
+        });
+    }
+
+</script>
+

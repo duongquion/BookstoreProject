@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Cart.css">
+    <title>B World | Đăng nhập</title>
+</head>
+<body>
+    <header>
+        <div class="nav-top">
+            <div class="container">
+                <div class="banner">
+                    <span class="logo">B-W<i class="ri-book-2-fill"></i>RLD</span>
+                    <span class="dot">|</span>
+                    <p>We love<br>books</p>
+                </div>
+                <div class="search">
+                    <input class="" type="text" placeholder="Tìm kiếm sách ...">
+                    <i class="ri-search-line"></i>
+                </div>
+                <div class="other">
+                    <span class="text">
+                        <a href="#"><span class="ri-gallery-view-2"></span> Danh mục</a>
+                    </span>
+                    <span class="text">|</span>
+                    <span class="text"><a href="#">NEWS</a></span>
+                </div>
+                <div class="user-item">
+                    <div class="icon-item">
+                        <a href="#" class="ri-shopping-cart-2-line"></a>
+                        <div class="item-number">0</div>
+                    </div>
+                    <span>|</span>
+                    <div class="icon-item">
+                        <a href="#" class="ri-heart-line"></a>
+                        <div class="item-number">0</div>
+                    </div>
+                    <span>|</span>
+                    <div class="dropdown-content">
+                        <a href="#" class="ri-user-3-line"></a>
+                        <div class="dropdown-list">
+                            <div class="dropdown_list_item">2023-2024</div>
+                            <div class="dropdown_list_item">2024-2025</div>
+                            <div class="dropdown_list_item">2025-2026</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+      <div class="pagination">
+        <div class="pagination-item">
+          <span class="ri-shopping-bag-3-fill" style="color: rgb(237, 74, 54);"></span>
+          <p style="color: rgb(237, 74, 54); font-weight: 800;">GIỎ HÀNG</p>
+          <div class="dashed-line"></div>
+          <span class="ri-bank-card-2-fill"></span>
+          <p>ĐẶT HÀNG</p>
+          <div class="dashed-line"></div>
+          <span class="ri-survey-fill"></span>
+          <p>HOÀN THÀNH ĐƠN HÀNG</p>
+        </div>
+      </div>
+      <div class="cart-body">
+        <div class="cart-left">
+          <div class="cart-title">
+            <ul>
+              <li><p>Tổng số sản phẩm(1)</p></li>
+              <li><p>Giá sản phẩm</p></li>
+              <li><p>Số lượng</p></li>
+              <li><p>Thành tiền</p></li>
+            </ul>
+          </div>
+          <div class="cart">
+            <div class="cart-item">
+              <ul>
+                <li class="getProduct"><img src="/Assets/1.jpg" alt=""><p>Đắc nhân tâm</p></li>
+                <li><p>800.000đ</p></li>
+                <li>
+                  <div class="quantity-container">
+                    <button type="button" class="quantity-button" onclick="decreaseQuantity(this)">-</button>
+                    <input type="text" class="quantity-input" value="1" min="1" name="quantity" readonly>
+                    <button type="button" class="quantity-button" onclick="increaseQuantity(this)">+</button>
+                  </div>
+                </li>
+                <li class="bin">
+                  <p >2.000đ</p>
+                  <a href="" ><span class="ri-delete-bin-5-fill"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+        <div class="cart-right">
+          <div class="cart-item">
+            <div class="big-tiltle"><h3>Đơn hàng</h3></div>
+            <div class="title">
+                <p>Tổng giá trị sản phẩm</p>
+                <h4>100.000đ</h4>
+            </div>
+            <div class="line">------------------------------------------</div>
+            <div class="checkout">
+              <a href="#">THANH TOÁN</a>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="logo">
+                        <span class="logo-banner">B-W<i class="ri-book-2-fill"></i>RLD</span>
+                        <div class="logo-icon">
+                            <span class="ri-facebook-circle-fill"></span>
+                            <span class="ri-instagram-fill"></span>
+                            <span class="ri-linkedin-box-fill"></span>
+                        </div>
+                    </div>
+                    <div class="footer-list">
+                        <div class="list-box">Giới thiệu
+                            <div class="list-box-item">ITEM 1</div>
+                            <div class="list-box-item">ITEM 2</div>
+                            <div class="list-box-item">ITEM 3</div>
+                        </div>
+                        <div class="list-box">Thể loại
+                            <div class="list-box-item">ITEM 1</div>
+                            <div class="list-box-item">ITEM 2</div>
+                            <div class="list-box-item">ITEM 3</div>
+                        </div>
+                        <div class="list-box">E-books
+                            <div class="list-box-item">ITEM 1</div>
+                            <div class="list-box-item">ITEM 2</div>
+                            <div class="list-box-item">ITEM 3</div>
+                        </div>
+                        <div class="list-box">Liên hệ
+                            <div class="list-box-item">
+                                <span class="ri-phone-fill"></span>
+                                0793135715
+                            </div>
+                            <div class="list-box-item">
+                                <span class="ri-time-fill"></span>
+                                Thứ 2-CN, 8:00 AM - 22:00 PM
+                            </div>
+                            <div class="list-box-item">
+                                <span class="ri-mail-fill"></span>
+                                bworld@gmail.com
+                            </div>
+                        </div>
+                    </div>                 
+                    <div class="payment-logo">
+                        <div class="logo-text">Hỗ trợ thanh toán</div>
+                        <img src="/Assets/XácNhận.png" alt="">
+                        <img src="/Assets/Hỗtrợthanhtoán.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span class="ri-copyright-fill"></span>
+                <div class="copyright">Copyright quyonduong@gmail.com | 2024-2025</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

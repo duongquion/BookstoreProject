@@ -1,0 +1,156 @@
+﻿@model IEnumerable<ProjectBookStores.ViewModels.favoriteProductViewModel>
+@{
+    ViewData["Title"] = "listFavoriteProduct";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var faver = (ProjectBookStores.EF.BookFaverite)ViewBag.Faver;
+    var formatMoney = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
+}
+<style>
+    /* Main */
+    main {
+        font-family: "SVN-Poppins", sans-serif;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+    }
+
+    .title {
+        display: flex;
+        justify-content: center;
+    }
+
+    main .order {
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .table-order {
+        width: 1200px;
+        border-collapse: collapse;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+        .table-order thead {
+            background-color: #36344D;
+            color: white;
+        }
+
+        .table-order th, .table-order td {
+            padding: 18px;
+            text-align: left;
+        }
+
+        .table-order th {
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .table-order tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+            .table-order tbody tr:nth-of-type(even) {
+                background-color: #f9f9f9;
+            }
+
+            .table-order tbody tr:hover {
+                background-color: #f1f1f1;
+            }
+
+        .table-order td {
+            vertical-align: middle;
+        }
+
+        .table-order a {
+            text-decoration: none;
+            text-align: center;
+            padding: 10px;
+            color: #fff;
+            background-color: #36344D;
+            border-radius: 8px;
+        }
+
+        .table-order img {
+            width: 70px;
+            height: 90px;
+        }
+
+    .success-order-null {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+        .success-order-null .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+            .success-order-null .container img {
+                width: 250px;
+                height: 250px;
+                object-fit: cover;
+            }
+
+            .success-order-null .container p {
+                color: #9E9E9E;
+                margin-top: 20px;
+            }
+
+            .success-order-null .container a {
+                text-decoration: none;
+                padding: 15px 30px;
+                font-size: 15px;
+                background-color: #36344D;
+                color: #fff;
+                margin-top: 20px;
+            }
+</style>
+@if (Model != null && Model.Any())
+{
+    <main>
+        <div class="title"><h2>DANH SÁCH YÊU THÍCH</h2></div>
+        <div class="order">
+            <table class="table-order">
+                <thead>
+                    <tr>
+                        <th>Hình ảnh</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Tác giả</th>
+                        <th>Giá</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td><img src="@item.productImages" /></td>
+                            <td>@item.productName</td>
+                            <td>@item.productAuthor</td>
+                            <td>@String.Format("{0:N0}đ", item.proPrice)</td>
+                            <td><a asp-controller="Product" asp-action="detailProduct" asp-route-id="@item.productId" asp-route-genid="@item.genreId">Chi tiết</a> | <a asp-controller="FavoriteProduct" asp-action="Delete" asp-route-id="@faver.Id">Xóa</a></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </main>
+}
+else
+{
+    <main>
+        <div class="success-order-null">
+            <div class="container">
+                <img src="/Assets/Customer/Assets/inbox.png" alt="">
+                <p>Bạn chưa có sản phẩm nào trong giỏ hàng!</p>
+                <a asp-controller="Product" asp-action="allProduct">Tiếp tục mua sắm</a>
+            </div>
+        </div>
+    </main>
+}

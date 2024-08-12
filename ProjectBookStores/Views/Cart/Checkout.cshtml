@@ -1,0 +1,497 @@
+﻿@using System.Security.Claims
+@model IEnumerable<ProjectBookStores.Models.CartModel>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Checkout";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var discount = (List<ProjectBookStores.EF.CustomerDiscount>)ViewBag.UserDiscount;
+    decimal shippingOrder = 20000;
+    var quantity = Model.Sum(x => x.proQuantity);
+    var formatMoney = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
+}
+<style>
+    .main {
+        width: 100%;
+        display: flex;
+        font-family: "SVN-Poppins", sans-serif;
+    }
+
+    .pagination {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+    }
+
+        .pagination .pagination-item {
+            width: 1200px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+            .pagination .pagination-item span {
+                font-size: 30px;
+                color: #36344D;
+            }
+
+            .pagination .pagination-item p {
+                font-size: 24px;
+                font-weight: 400;
+                color: #36344D;
+                padding-top: 3px;
+            }
+
+    .dashed-line {
+        border-top: 2px dashed #9E9E9E;
+        width: 180px;
+        margin-top: 15px;
+    }
+
+    .head-cart {
+        padding-left: 160px;
+        width: 1360px;
+        height: 430px;
+        display: flex;
+        gap: 10px;
+        margin-top: 50px;
+    }
+
+        .head-cart .cart-left {
+            width: 70%;
+            background-color: #fff;
+        }
+
+            .head-cart .cart-left .container {
+                padding: 30px;
+            }
+
+    .location {
+        display: flex;
+        gap: 10px;
+    }
+
+    .head-cart span {
+        font-size: 24px;
+        color: #36344D;
+    }
+
+    .head-cart h4 {
+        font-size: 20px;
+        color: #36344D;
+    }
+
+    .detail-address {
+        background-color: #f1f1f1;
+        padding: 20px;
+        margin-top: 20px;
+        border-left: 5px dashed #36344D;
+        height: 100px;
+    }
+
+        .detail-address p {
+            font-size: 17px;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .detail-address a {
+            font-size: 15px;
+            font-weight: 400;
+            color: #555;
+        }
+
+    .payment-methods {
+        margin-top: 25px;
+    }
+
+    .payment {
+        display: flex;
+        gap: 10px;
+    }
+
+    textarea {
+        width: 100%;
+        height: 100px;
+        padding: 20px;
+        margin-top: 10px;
+        font-size: 16px;
+        color: #333;
+        background-color: #EEEEEE;
+        resize: vertical;
+    }
+
+        textarea:focus {
+            outline: none;
+            font-size: 18px;
+            font-weight: 400;
+            font-family: "SVN-Poppins", sans-serif;
+        }
+
+    .head-cart .cart-right {
+        width: 30%;
+        background-color: #fff;
+        height: 430px;
+    }
+
+        .head-cart .cart-right .cart-item {
+            padding: 25px;
+        }
+
+            .head-cart .cart-right .cart-item h3 {
+                font-size: 24px;
+                font-weight: 700;
+                margin-bottom: 30px;
+            }
+
+            .head-cart .cart-right .cart-item .title {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 8px;
+                margin-bottom: 8px;
+            }
+
+                .head-cart .cart-right .cart-item .title p {
+                    font-weight: 600;
+                    font-size: 15px;
+                    color: #555;
+                    font-style: normal;
+                }
+
+    .cart-right p {
+        font-size: 13px;
+        font-weight: 300;
+        margin-top: 10px;
+        color: #9E9E9E;
+        font-style: italic;
+    }
+
+    .head-cart .cart-right .cart-item .title h4 {
+        font-size: 20px;
+        color: rgb(237, 74, 54);
+        padding: 3px;
+    }
+
+    .head-cart .cart-right .cart-item .line {
+        color: #9E9E9E;
+    }
+
+    .head-cart .cart-right .cart-item .checkout {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+        .head-cart .cart-right .cart-item .checkout button {
+            padding: 15px 25px;
+            width: 310px;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+            background-color: #36344D;
+        }
+
+    .delivery {
+        padding-left: 160px;
+        width: 1360px;
+        margin-top: 10px;
+    }
+
+        .delivery .container {
+            padding: 30px;
+            background-color: #fff;
+            width: 830px;
+        }
+
+        .delivery .big-title {
+            display: flex;
+            gap: 10px;
+        }
+
+            .delivery .big-title span {
+                font-size: 22px;
+                color: #36344D;
+            }
+
+        .delivery h4 {
+            font-size: 20px;
+            color: #36344D;
+        }
+
+        .delivery h5 {
+            color: #555;
+            font-size: 15px;
+            margin: 5px 0px 5px 0px;
+        }
+
+        .delivery p {
+            color: #555;
+        }
+
+    .cart {
+        width: 100%;
+    }
+
+    .cart-body {
+        padding-left: 160px;
+        width: 1360px;
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+        .cart-body .cart-left {
+            width: 830px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+            .cart-body .cart-left .cart-title ul {
+                display: flex;
+                justify-content: space-between;
+                padding: 20px;
+                background-color: #fff;
+            }
+
+            .cart-body .cart-left .cart-title p {
+                font-size: 20px;
+                font-weight: 600;
+            }
+
+            .cart-body .cart-left .cart-item {
+                width: 100%;
+                height: auto;
+            }
+
+                .cart-body .cart-left .cart-item ul {
+                    display: flex;
+                    justify-content: space-between;
+                    background-color: #fff;
+                    padding: 20px;
+                    border-bottom: 1px solid #f1f1f1;
+                }
+
+                .cart-body .cart-left .cart-item .getProduct {
+                    display: flex;
+                    gap: 20px;
+                    height: auto;
+                }
+
+                    .cart-body .cart-left .cart-item .getProduct p {
+                        width: 90px;
+                        font-size: 18px;
+                        font-weight: 300;
+                    }
+
+                .cart-body .cart-left .cart-item p {
+                    font-size: 20px;
+                    font-weight: 400;
+                    padding-top: 8px;
+                    width: 90px;
+                    text-align:center;
+                }
+
+                .cart-body .cart-left .cart-item .bin {
+                    padding-top: 7px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+
+                    .cart-body .cart-left .cart-item .bin a {
+                        margin-left: auto;
+                    }
+
+                .cart-body .cart-left .cart-item a {
+                    text-decoration: none;
+                    color: #36344D;
+                }
+
+                .cart-body .cart-left .cart-item span {
+                    font-size: 24px;
+                }
+
+                .cart-body .cart-left .cart-item img {
+                    width: 120px;
+                    height: 150px;
+                    object-fit: cover;
+                }
+
+    .quantity-container {
+        display: flex;
+        height: 40px;
+        align-items: center;
+        border: 1px solid #36344D;
+        width: 125px;
+        border-radius: 5px;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+
+    .quantity-button {
+        width: 40px;
+        height: 40px;
+        color: #36344D;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        background-color: transparent;
+    }
+
+        .quantity-button:first-child {
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        .quantity-button:last-child {
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        .quantity-button:hover {
+            background-color: #36344D;
+            color: #ffffff;
+        }
+
+    .quantity-input {
+        width: 45px;
+        height: 38px;
+        text-align: center;
+        font-size: 16px;
+        color: #36344D;
+        border: none;
+        margin: 0;
+        pointer-events: none;
+    }
+
+        .quantity-input:focus {
+            outline: none;
+        }
+</style>
+<main>
+    <div class="pagination">
+        <div class="pagination-item">
+            <span class="ri-shopping-bag-3-fill"></span>
+            <p>GIỎ HÀNG</p>
+            <div class="dashed-line"></div>
+            <span class="ri-bank-card-2-fill" style="color: rgb(237, 74, 54);"></span>
+            <p style="color: rgb(237, 74, 54); font-weight: 700;">ĐẶT HÀNG</p>
+            <div class="dashed-line"></div>
+            <span class="ri-survey-fill"></span>
+            <p>HOÀN THÀNH ĐƠN HÀNG</p>
+        </div>
+    </div>
+
+    <div class="head-cart">
+        <div class="cart-left">
+            <div class="container">
+                <div class="delivery-address">
+                    <div class="location">
+                        <span class="ri-map-pin-2-fill"></span>
+                        <h4>ĐỊA CHỈ GIAO HÀNG</h4>
+                    </div>
+                    <div class="detail-address">
+                        @if (ViewBag.CheckAddress == null)
+                        {
+                            <p>Bạn chưa có địa chỉ giao hàng, vui lòng thêm địa chỉ mới</p>
+                            <a href="#">Thêm địa chỉ mới</a>
+                        }
+                        else
+                        {
+                            <p>Địa chỉ của bạn:</p> @await Component.InvokeAsync("customerAddress")
+                        }
+                    </div>
+                </div>
+                <div class="payment-methods">
+                    <div class="payment">
+                        <span class="ri-bank-card-fill"></span>
+                        <h4>GHI CHÚ</h4>
+                    </div>
+                    <form method="post" asp-action="Checkout">
+                        <textarea class="note" name="noteOrder" id="" spellcheck="false" placeholder="VD: Giao giờ hành chính giúp tôi!"></textarea>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="cart-right">
+            <div class="cart-item">
+                <div class="big-tiltle">
+                    <h3>Đơn hàng</h3>
+                </div>
+                <div class="title">
+                    <p>Tạm tính</p>
+                    <h4>@String.Format(formatMoney, "{0:c0}", Model.Sum(x => x.finalPrice))</h4>
+                </div>
+                <div class="title">
+                    <p>Phí vận chuyển</p>
+                    @if (quantity > 5)
+                    {
+                        <h4>Bạn được miễn phí ship</h4>
+                    }
+                    else
+                    {
+                        <h4>@String.Format(formatMoney, "{0:c0}", shippingOrder)</h4>
+                    }
+                </div>
+                <div class="title">
+                    <p>Mã giảm giá</p>
+                    <h4>0%</h4>
+                </div>
+                <div class="line">----------------------------------------------------------</div>
+                <div class="title">
+                    <p>Tổng thanh toán</p>
+                    <h4>@String.Format(formatMoney, "{0:c0}", Model.Sum(x => x.finalPrice + x.shippingOrder))</h4>
+                </div>
+                <div class="line">----------------------------------------------------------</div>
+                <p>Thanh toán khi nhận hàng*</p>
+                <div class="checkout">
+                    <form method="post" asp-action="Checkout">
+                        <button type="submit" style="cursor:pointer;">THANH TOÁN</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-body">
+        <div class="cart-left">
+            <div class="cart-title">
+                <ul>
+                    <li><p>Tổng số sản phẩm(1)</p></li>
+                    <li><p>Giá sản phẩm</p></li>
+                    <li><p>Số lượng</p></li>
+                    <li><p>Thành tiền</p></li>
+                </ul>
+            </div>
+            <div class="cart">
+                <div class="cart-item">
+                    @foreach (var item in Model)
+                    {
+                        <ul>
+                            <li class="getProduct"><img src="@item.proImage" alt=""><p>@item.proName</p></li>
+                            <li><p>@String.Format(formatMoney, "{0:c0}", item.proPrice)</p></li>
+                            <li>
+                                <p>@item.proQuantity</p>
+                            </li>
+                            <li class="bin">
+                                <p>@String.Format(formatMoney, "{0:c0}", item.finalPrice)</p>
+                            </li>
+                        </ul>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="delivery">
+        <div class="container">
+            <div class="big-title">
+                <span class="ri-truck-fill"></span>
+                <h4>PHƯƠNG THỨC GIAO HÀNG</h4>
+            </div>
+            <div class="line">------------------------------------------------------------------------------------------------------------------------------------------------</div>
+            <h5>Giao hàng tiêu chuẩn: @shippingOrder</h5>
+            <p>Dự kiến giao: 4 ngày sau khi thanh toán</p>
+        </div>
+    </div>
+</main>

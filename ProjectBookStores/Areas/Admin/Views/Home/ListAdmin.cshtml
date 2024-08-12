@@ -1,0 +1,139 @@
+﻿@model IEnumerable<ProjectBookStores.ViewModels.AdminViewModel>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "ListAdmin";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<style>
+    .table{
+        margin-top: 30px;
+    }
+
+        .table th{
+            background-color: #eeeeef;
+        }
+
+        .table tbody, .table td, .table tfoot, .table th, .table thead, .table tr, .table > :not(:last-child) > :last-child > * {
+            border-color: var(--bs-border-color);
+            height: auto;
+        }
+
+        .table a{
+            color: #fff;
+            background-color: #36344D;
+            padding: 8px 5px;
+        }
+
+    h1{
+        color: #6c757d;
+        font-size: 20px;
+        font-weight: 600;
+        margin-left:20px;
+        margin-top: 20px;
+    }
+
+    .input-group {
+        width: 300px;
+        margin-left: auto;
+    }
+
+    .create {
+        color: #fff;
+        background-color: #36344D;
+        width: 60px;
+        padding: 8px;
+        text-align: center;
+        margin-left: 20px;
+        border-radius: 5px;
+        font-weight:600;
+    }
+
+        .create:hover{
+            text-decoration: none;
+            background-color: #36343D;
+        }
+
+    .input-group button{
+        background-color: #36344D;
+        border: none;
+    }
+
+</style>
+<h1>DANH SÁCH QUẢN TRỊ VIÊN B-WORLD</h1>
+<a class="create" asp-action="Create">MỚI</a>
+@using (Html.BeginForm("ListAdmin", "Home", FormMethod.Get))
+{
+    <div class="input-group">
+        <input type="search" class="form-control rounded" placeholder="Tìm kiếm Tên tài khoản" autocomplete="off" aria-label="Search" aria-describedby="search-addon" name="searchString" value="@ViewBag.SearchString" />
+        <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+    </div>
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.UserName)</th>
+            <th>@Html.DisplayNameFor(model => model.Email)</th>
+            <th>@Html.DisplayNameFor(model => model.CreateDate)</th>
+            <th>@Html.DisplayNameFor(model => model.CreateBy)</th>
+            <th>@Html.DisplayNameFor(model => model.Status)</th>
+            <th>@Html.DisplayNameFor(model => model.PermissionName)</th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.UserName)</td>
+                <td>@Html.DisplayFor(modelItem => item.Email)</td>
+                <td>@Html.DisplayFor(modelItem => item.CreateDate)</td>
+                <td>@Html.DisplayFor(modelItem => item.CreateBy)</td>
+                <td>
+                    <span class="status-text">@(item.Status ? "Hoạt động" : "Bị khóa") </span>
+                </td>
+                <td>@Html.DisplayFor(modelItem => item.PermissionName)</td>
+                <td>
+                    <a href="#" onclick="return handleStatusChange(@item.Id, this);">
+                        @(item.Status ? "Khóa tài khoản" : "Mở tài khoản")
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    function handleStatusChange(id, link) {
+        // Hiển thị hộp thoại xác nhận
+        if (confirm('Bạn có chắc chắn muốn cập nhật?')) {
+            // Nếu người dùng chọn "OK", gọi hàm changeStatus
+            changeStatus(id, link);
+        }
+        // Trả về false để ngăn không tải lại trang
+        return false;
+    }
+
+    function changeStatus(id, link) {
+        $.ajax({
+            url: '/admin/changeStatus/' + id,
+            type: 'POST',
+            success: function (response) {
+                if (response.status !== undefined) {
+                    var $link = $(link);
+                    var $statusCell = $link.closest('tr').find('td:nth-child(6) .status-text');
+
+                    // Cập nhật trạng thái trong ô
+                    $statusCell.text(response.status ? "Hoạt động" : "Bị khóa");
+
+                    // Cập nhật văn bản của liên kết
+                    $link.text(response.status ? "Khóa tài khoản" : "Mở tài khoản");
+                }
+            },
+            error: function () {
+                alert('Lỗi khi thay đổi trạng thái.');
+            }
+        });
+    }
+</script>
+

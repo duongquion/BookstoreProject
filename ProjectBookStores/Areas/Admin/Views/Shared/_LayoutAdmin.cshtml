@@ -1,0 +1,445 @@
+﻿@using System.Security.Claims;
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+	var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+	var userId = userIdClaim != null ? userIdClaim.Value : "unknown";
+	var chartDataJson = ViewBag.ChartDataJson;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
+	<meta name="author" content="AdminKit">
+	<meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="shortcut icon" href="/Assets/Customer/Assets/letter-b.png" />
+
+	<link rel="canonical" href="https://demo-basic.adminkit.io/" />
+
+	<title>ADMIN - B World | I love books</title>
+
+	<link href="~/Assets/Admin/css/app.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<style>
+	.main {
+		background: #FAFBFC;
+	}
+
+	.card {
+		box-shadow: 0 0 -1px 0 rgba(33, 37, 41, .05);
+		margin-bottom: 24px;
+		border: none;
+	}
+	.sidebar, .sidebar-content {
+		background: #36344D;
+		transition: margin-left .35s ease-in-out, left .35s ease-in-out, margin-right .35s ease-in-out, right .35s ease-in-out;
+	}
+	.sidebar-link, a.sidebar-link {
+		background: #36344D;
+		border-left: 3px solid transparent;
+		color: rgba(233, 236, 239, .5);
+		cursor: pointer;
+		display: block;
+		font-weight: 400;
+		padding: .625rem 1.625rem;
+		position: relative;
+		text-decoration: none;
+		transition: background .1s ease-in-out;
+	}
+
+	.sidebar-item.active .sidebar-link:hover, .sidebar-item.active > .sidebar-link {
+		background: none;
+		border-left-color: none;
+		color: rgba(233, 236, 239, .5);
+		border:none;
+	}
+
+		.sidebar-item.active .sidebar-link:hover i, .sidebar-item.active .sidebar-link:hover svg, .sidebar-item.active > .sidebar-link i, .sidebar-item.active > .sidebar-link svg {
+			color: rgba(233, 236, 239, .5);
+		}
+
+	.table tbody, .table td, .table tfoot, .table th, .table thead, .table tr, .table > :not(:last-child) > :last-child > * {
+		border-color: var(--bs-border-color);
+		height: 55px;
+	}
+
+	.card-header .card-title {
+        color: #36344D;
+        font-size: 22px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+	.bg-warning {
+		--bs-bg-opacity: 1;
+		padding: 8px;
+		font-size: 14px;
+	}
+
+	.py-3 {
+		padding-top: revert-layer;
+		height: 274px;
+	}
+</style>
+<body>
+	<div class="wrapper">
+		<nav id="sidebar" class="sidebar js-sidebar">
+			<div class="sidebar-content js-simplebar">
+				<a class="sidebar-brand" href="/admin/index">
+					<span class="align-middle">B-W<i class="ri-book-2-fill"></i>RLD</span>
+				</a>
+
+				<ul class="sidebar-nav">
+					<li class="sidebar-header">
+						QUẢN TRỊ VIÊN
+					</li>
+
+					<li class="sidebar-item active">
+						<a class="sidebar-link" href="/admin/index">
+							<i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Bảng điều khiển</span>
+						</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="/admin/AdminProfile/@userId">
+							<i class="align-middle" data-feather="user"></i> <span class="align-middle">Thông tin QTV</span>
+						</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="/admin/list">
+							<i class="align-middle" data-feather="log-in"></i> <span class="align-middle">QTV</span>
+						</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="/admin/register">
+							<i class="align-middle" data-feather="user-plus"></i> <span class="align-middle">Thêm QTV</span>
+						</a>
+					</li>
+
+					<li class="sidebar-header">
+						SẢN PHẨM
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="/admin/dssp">
+							<i class="align-middle" data-feather="square"></i> <span class="align-middle">Danh sách sản phẩm</span>
+						</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="/admin/dmlsp">
+							<i class="align-middle" data-feather="square"></i> <span class="align-middle">Danh sách loại sản phẩm</span>
+						</a>
+					</li>
+					<li class="sidebar-header">
+						ĐƠN HÀNG
+					</li>
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="/admin/donhang">
+							<i class="ri-bill-fill"></i> <span class="align-middle">Đơn hàng chờ vận chuyển</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="main">
+			<nav class="navbar navbar-expand navbar-light navbar-bg">
+				<a class="sidebar-toggle js-sidebar-toggle">
+					<i class="hamburger align-self-center"></i>
+				</a>
+
+				<div class="navbar-collapse collapse">
+					<ul class="navbar-nav navbar-align">
+						
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-bs-toggle="dropdown">
+								<i class="align-middle" data-feather="settings"></i>
+							</a>
+							
+							<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
+								<img src="~/Assets/Admin/img/avatars/avatar.jpg" class="avatar img-fluid rounded me-1" /> <span class="text-dark">@Context.User.Identity.Name</span>
+							</a>
+
+							<div class="dropdown-menu dropdown-menu-end">
+								<a class="dropdown-item" href="pages-profile.html"><i class="align-middle me-1" data-feather="user"></i> Profile</a>
+								<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="pie-chart"></i> Analytics</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="index.html"><i class="align-middle me-1" data-feather="settings"></i> Settings & Privacy</a>
+								<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="help-circle"></i> Help Center</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" asp-controller="Identity" asp-action="Logout">Log out</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			@RenderBody()
+
+			@* <footer class="footer">
+				<div class="container-fluid">
+					<div class="row text-muted">
+						<div class="col-6 text-start">
+							<p class="mb-0">
+								<a class="text-muted" href="https://adminkit.io/" target="_blank"><strong>AdminKit</strong></a> - <a class="text-muted" href="https://adminkit.io/" target="_blank"><strong>Bootstrap Admin Template</strong></a>								&copy;
+							</p>
+						</div>
+						<div class="col-6 text-end">
+							<ul class="list-inline">
+								<li class="list-inline-item">
+									<a class="text-muted" href="https://adminkit.io/" target="_blank">Support</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="https://adminkit.io/" target="_blank">Help Center</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="https://adminkit.io/" target="_blank">Privacy</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="https://adminkit.io/" target="_blank">Terms</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer> *@
+		</div>
+	</div>
+	<script src="~/Assets/Admin/js/app.js"></script>
+	@RenderSection("Scripts", required: false)
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			var chartData = @Html.Raw(chartDataJson); // Get chart data from ViewBag
+
+			var ctx = document.getElementById("chartjs-dashboard-line").getContext("2d");
+			var gradient = ctx.createLinearGradient(0, 0, 0, 225);
+			gradient.addColorStop(0, "rgba(215, 227, 244, 1)");
+			gradient.addColorStop(1, "rgba(215, 227, 244, 0)");
+
+			// Format numbers as Vietnamese currency
+			function formatCurrency(value) {
+				return new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(value);
+			}
+
+			// Line chart
+			new Chart(ctx, {
+				type: "line",
+				data: {
+					labels: chartData.labels,
+					datasets: [{
+						label: "Tổng doanh thu tháng",
+						fill: true,
+						backgroundColor: gradient,
+						borderColor: window.theme.primary,
+						data: chartData.data,
+						borderWidth: 2
+					}]
+				},
+				options: {
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					tooltips: {
+						intersect: false,
+						callbacks: {
+							label: function (tooltipItem, data) {
+								return formatCurrency(tooltipItem.yLabel);
+							}
+						}
+					},
+					hover: {
+						intersect: true
+					},
+					plugins: {
+						filler: {
+							propagate: false
+						}
+					},
+					scales: {
+						xAxes: [{
+							gridLines: {
+								color: "rgba(0,0,0,0.0)"
+							}
+						}],
+						yAxes: [{
+							ticks: {
+								callback: function (value, index, values) {
+									return formatCurrency(value);
+								}
+							},
+							display: true,
+							borderDash: [3, 3],
+							gridLines: {
+								color: "rgba(0,0,0,0.0)"
+							}
+						}]
+					}
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			// Pie chart
+			new Chart(document.getElementById("chartjs-dashboard-pie"), {
+				type: "pie",
+				data: {
+					labels: ["Chrome", "Firefox", "IE"],
+					datasets: [{
+						data: [4306, 3801, 1689],
+						backgroundColor: [
+							window.theme.primary,
+							window.theme.warning,
+							window.theme.danger
+						],
+						borderWidth: 5
+					}]
+				},
+				options: {
+					responsive: !window.MSInputMethodContext,
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					cutoutPercentage: 75
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			// Bar chart
+			new Chart(document.getElementById("chartjs-dashboard-bar"), {
+				type: "bar",
+				data: {
+					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+					datasets: [{
+						label: "This year",
+						backgroundColor: window.theme.primary,
+						borderColor: window.theme.primary,
+						hoverBackgroundColor: window.theme.primary,
+						hoverBorderColor: window.theme.primary,
+						data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 79],
+						barPercentage: .75,
+						categoryPercentage: .5
+					}]
+				},
+				options: {
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					scales: {
+						yAxes: [{
+							gridLines: {
+								display: false
+							},
+							stacked: false,
+							ticks: {
+								stepSize: 20
+							}
+						}],
+						xAxes: [{
+							stacked: false,
+							gridLines: {
+								color: "transparent"
+							}
+						}]
+					}
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			var markers = [{
+				coords: [31.230391, 121.473701],
+				name: "Shanghai"
+			},
+			{
+				coords: [28.704060, 77.102493],
+				name: "Delhi"
+			},
+			{
+				coords: [6.524379, 3.379206],
+				name: "Lagos"
+			},
+			{
+				coords: [35.689487, 139.691711],
+				name: "Tokyo"
+			},
+			{
+				coords: [23.129110, 113.264381],
+				name: "Guangzhou"
+			},
+			{
+				coords: [40.7127837, -74.0059413],
+				name: "New York"
+			},
+			{
+				coords: [34.052235, -118.243683],
+				name: "Los Angeles"
+			},
+			{
+				coords: [41.878113, -87.629799],
+				name: "Chicago"
+			},
+			{
+				coords: [51.507351, -0.127758],
+				name: "London"
+			},
+			{
+				coords: [40.416775, -3.703790],
+				name: "Madrid "
+			}
+			];
+			var map = new jsVectorMap({
+				map: "world",
+				selector: "#world_map",
+				zoomButtons: true,
+				markers: markers,
+				markerStyle: {
+					initial: {
+						r: 9,
+						strokeWidth: 7,
+						stokeOpacity: .4,
+						fill: window.theme.primary
+					},
+					hover: {
+						fill: window.theme.primary,
+						stroke: window.theme.primary
+					}
+				},
+				zoomOnScroll: false
+			});
+			window.addEventListener("resize", () => {
+				map.updateSize();
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			var date = new Date(Date.now() - 5 * 24 * 60 * 60 * 1000);
+			var defaultDate = date.getUTCFullYear() + "-" + (date.getUTCMonth() + 1) + "-" + date.getUTCDate();
+			document.getElementById("datetimepicker-dashboard").flatpickr({
+				inline: true,
+				prevArrow: "<span title=\"Previous month\">&laquo;</span>",
+				nextArrow: "<span title=\"Next month\">&raquo;</span>",
+				defaultDate: defaultDate
+			});
+		});
+	</script>
+
+</body>
+
+</html>

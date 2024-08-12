@@ -1,0 +1,965 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@font-face {
+    font-family: 'Poppins';
+    src: url('/font-poppins/Poppins-Bold.woff2') format('woff2'),
+        url('/font-poppins/Poppins-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/font-poppins/Poppins-Black.woff2') format('woff2'),
+        url('/font-poppins/Poppins-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/font-poppins/Poppins-ExtraBold.woff2') format('woff2'),
+        url('/font-poppins/Poppins-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/font-poppins/Poppins-Medium.woff2') format('woff2'),
+        url('/font-poppins/Poppins-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/font-poppins/Poppins-ExtraLight.woff2') format('woff2'),
+        url('/font-poppins/Poppins-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/font-poppins/Poppins-Regular.woff2') format('woff2'),
+        url('/font-poppins/Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/font-poppins/Poppins-Light.woff2') format('woff2'),
+        url('/font-poppins/Poppins-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/font-poppins/Poppins-SemiBold.woff2') format('woff2'),
+        url('/font-poppins/Poppins-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/font-poppins/Poppins-Thin.woff2') format('woff2'),
+        url('/font-poppins/Poppins-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    font-family: "SVN-Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #F5F5F5;
+}
+
+/* Header */
+
+.nav-top{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    background-color:  #36344D;
+    position: relative;
+    z-index: 100;
+}
+.nav-top .container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+/* Banner */
+.nav-top .banner {
+    display: flex;
+    color: #EEEEEE;
+    gap: 10px;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.nav-top .banner .logo{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.nav-top .banner .dot{
+    font-size: 28px;
+    font-weight: 200;
+}
+
+.nav-top .banner p{
+    color: #EEEEEE;
+    display: grid;
+    font-size: 12px;
+    padding-top: 3px ;
+    font-weight: 200;
+}
+
+/* Search */
+.nav-top .container .search {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    width: 500px;
+    overflow-x: hidden;
+}
+
+.search{
+    position: relative;
+}
+
+.nav-top .container .search input{
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    background-color: #f1f1f1;
+}
+    ::placeholder{
+        font-size: 16px;
+        color: #555;
+    }
+.nav-top .container .search button{
+    display: inline-block;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 0;
+    padding: 0rem 1rem;
+    color: #555;
+    cursor: pointer;
+    height: 38px;
+}
+
+/* Other */
+.nav-top .container .other{
+    font-size: 16px;
+    color:#9E9E9E;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-top .container .other a {
+    text-decoration: none;
+    color: #EEEEEE;
+    cursor: pointer;
+}
+
+.nav-top .container .other a:hover {
+    text-decoration: none;
+    color: #9E9E9E;
+    
+}
+
+.nav-top .container .other .text{
+    padding-top: 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+.mega-menu {
+    display: none;
+    position: absolute;
+    background-color: #36344D;
+    width: 1200px;
+    left: 10%;
+    top: 70%;
+    z-index: 1;
+}
+
+.mega-menu-row {
+    display: flex;
+    padding: 20px;
+}
+
+.mega-menu-column {
+    flex: 1;
+    padding: 10px;
+}
+
+.mega-menu-column h2 {
+    margin-top: 20px;
+    color: #f1f1f1;
+    margin-bottom: 20px;
+}
+
+.mega-menu-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.mega-menu-column ul li a {
+    color: black;
+    padding: 8px 0;
+    text-decoration: none;
+    display: block;
+}
+
+.mega-menu-column ul li a:hover {
+    background-color: #fff;
+    color: #36344D;
+}
+
+.menu:hover .mega-menu {
+    display: block;
+}
+
+/* DIALOG */
+.dialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity linear 0.2s;
+}
+
+.dialog:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.dialog-body{
+    width: 600px;
+    position: relative;
+    padding: 16px;
+    background-color: #F5F5F5;
+    color: #333;
+}
+
+.dashed-line {
+    border-top: 2px dashed #000;
+    width: 100%;
+    padding-bottom: 8px;
+}
+
+.dialog-body h3{
+    text-align: center;
+    padding-bottom: 6px;
+}
+
+.dialog-body p{
+    font-size: 13px;
+    color: #555;
+    padding-bottom: 6px;
+}
+
+.dialog-close{
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.overlay {
+    background-color: rgba(0,0,0,0.2);
+}
+
+.dialog-item input{
+    width: 450px;
+    background-color: #fff;
+    padding: 10px;
+    border: none;
+}
+
+.dialog-item input::placeholder{
+    font-size: 13px;
+}
+
+.dialog-item button{
+    background-color: #36344D;
+    color: #fff;
+    padding: 10px;
+}
+
+/* user-item */
+
+.nav-top .user-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.nav-top .user-item span{
+    color: #9E9E9E;
+    font-size: 28px;
+    font-weight: 100;
+}
+
+.nav-top .user-item a {
+    font-size: 28px;
+    text-decoration: none;
+    color: #EEEEEE;
+    position: relative;
+}
+
+.user-item .icon-item {
+    position: relative;
+}
+
+.user-item .icon-item .item-number {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 16px;
+    height: 16px;   
+    font-size: 13px;
+    background-color: #fff;
+    color: #36344D;
+    border-radius: 50%;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    font-family: "SVN-Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.dropdown-content {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content .dropdown-list {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    right: 0%;
+    background-color: #f9f9f9;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+}
+
+.dropdown-list .dropdown-list-item span{
+    color: black;
+}
+
+.dropdown-list-item .content{
+    font-size: 18px;
+    color: #36344D;
+    padding-top: 5px;
+    font-weight: 300;
+}
+
+.dropdown-list-item .content:nth-child(1){
+    font-size: 15px;
+    color: #9E9E9E;
+    padding-top: 3px ;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.dropdown-content .dropdown-list .dropdown-list-item {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown-content .dropdown-list .dropdown-list-item:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown-content:hover .dropdown-list {
+    display: block;
+}
+
+/* **************************************** 2. Main **************************************** */
+/*  2.1 SLIDER  */
+.slider {
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider .swiper{
+    width: 100%;
+    height: 100%;
+}
+
+.slider .image-fit-cover{
+    width: 100%;
+    height: 100%;
+}
+
+.slider .image-fit-cover img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider .swiper-slide{
+    display: flex;
+    justify-content: center;
+}
+
+.slider .item{
+    max-width: 1200px;
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.slider .item .content{
+    box-sizing: border-box;
+    color: #fff;
+    width: 600px;
+}
+
+.slider .item .content .special-author{
+    border: 2px solid #fff;
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    padding: 15px 5px 10px 5px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.slider .item .content .books{
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    letter-spacing: 10px;
+    width: 700px;
+    text-shadow: 0 9px 8px;
+}
+
+.slider .item .content .title{
+    font-size: 18px;
+    word-spacing: 1.5px;
+    width: 90%;
+    height: 300px;
+    line-height: 1.5;
+}
+
+.slider .item .content .buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 130px);
+    grid-template-rows: 40px;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.slider .item .content button {
+    border: none;
+    background-color: #f1f1f1;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    font-family: "SVN-Poppins", sans-serif;
+    cursor: pointer;
+}
+
+.slider .item .content button:nth-child(2) {
+    background-color: transparent;
+    color: #f1f1f1;
+    border: 1px solid #f1f1f1;
+}
+
+.slider .item .show-books {
+    box-sizing: border-box;
+    color: #fff;
+    display: flex;
+    gap: 10px;
+}
+
+.slider .item .show-books .sale {
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+.slider .item .show-books .image-book {
+    width: 20vw;
+}
+
+.slider .item .show-books .image-book img {
+    width: 350px;
+    height: 500px;
+    object-fit: cover;
+    box-shadow: 20px 20px 50px 10px black;
+}
+
+.slider .item .show-books p {
+    margin-top: 20px;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    font-weight: 300;
+}
+/* arrows */
+.arrows{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    gap: 10px;
+}
+
+.arrows button {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    border: none;
+    background-color: #eee4;
+    font-size:40px;
+    color: #ffff;
+}
+
+.arrows button:hover{
+    background-color: #eee;
+    color: #555;
+    cursor: pointer;
+}
+
+/* Benefits */
+.benefit{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    height: auto;
+}
+
+.benefit .container{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.benefit .container .box-center,
+.benefit .container .box{
+    display: flex;
+    gap:15px;
+    height: 100%;
+}
+
+    .box-center{
+        padding-left: 90px;
+        padding-right: 90px;
+        border-left: 1px solid #36344D;
+        border-right: 1px solid #36344D;
+    }
+
+.benefit .container .box-center span,
+.benefit .container .box span{
+    font-size: 50px;
+    /* padding: 15px;
+    border-radius: 100%;
+    background-color: #9E9E9E; */
+    color: #36344D
+}
+
+.benefit .container .box-center .box-text,
+.benefit .container .box .box-text{
+    font-size: 24px;
+    font-weight: 300;
+    padding-top: 15px;
+}
+
+/* sale-product */
+.product{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.product .container{
+    width: 1200px;
+    
+}
+
+.product .container .sale-banner{
+    width: 100%;
+    border-radius: 10px;
+    background-color: #ffff;
+    display: flex;
+}
+
+.product .container .sale-banner img{
+    width: 200px;
+    height: auto;
+    padding: 20px;
+}
+
+.product .container .sale-banner .banner-text{
+    padding: 25px 10px 10px 0px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.product .container .sale-banner .banner-hour{
+    display: flex;
+    gap: 5px;
+    padding: 20px 10px 10px 0px;
+}
+
+.product .container .sale-banner .banner-hour span{
+    padding-top: 5px;
+}
+
+.product .container .sale-banner .countdown-number{
+    padding: 5px 8px 5px 8px;
+    background-color: #36344D;
+    height: 30px;
+    border-radius: 10px;
+    color: #ffff;
+}
+
+.product .container .product-list{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    background-color: #ffff;
+    border-radius: 10px;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.product .container .product-list .product-list-item{
+    width: auto;
+    height: 100%;
+}
+
+.product .container .product-list .product-list-item img{
+    width: 200px;
+}
+
+.product .container .product-list .product-list-item .product-box{
+    width: 200px;
+}
+
+.product-list-item .item-image {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.product-list-item .item-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-list-item .item-name{
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 20px;
+    height: 50px;
+}
+
+.product-list-item .item-author{
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+.product-list-item .discount{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
+    background-color: #F44336;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: #ffff;
+    font-weight: bold;
+    width: 60px;
+    height: 30px;
+    margin-top: 4px;
+}
+
+.product-list-item .item-total-price{
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: #36344D;
+}
+
+.product-list-item .item-unit-price{
+    text-decoration: line-through;
+    color: #a9a9a9;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.product-list-item .button{
+    width: 100%;
+    margin-top: 15px;
+}
+
+.product-list-item .button button{
+    width: 100%;
+    border: none;
+    padding: 13px;
+    background-color: #f1f1f1;
+    letter-spacing: 1.5px;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #36344D;
+    color: #ffff;
+    font-family: "SVN-Poppins",sans-serif;
+}
+
+/* NEW PRODUCTS */
+.product .container .new-banner{
+    width: 100%;
+    border-radius: 10px;
+    background-color: #ffff;
+    display: flex;
+    font-weight: bold;
+    font-size: 24px;
+    height: 70px;
+    padding: 20px 10px 0px 20px;
+    gap: 10px;
+}
+
+/* CONTACT */
+.contact{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.contact .container{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffff;
+    padding: 30px;
+    border-radius: 10px;
+    color: #36344D;
+}
+
+.contact .container .contact-about{
+    width: 100%;
+}
+
+.contact .container .contact-about .contact-title{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.contact .container .contact-about .contact-description{
+    font-size: 18px;
+    word-spacing: 2px;
+    padding: 30px 0 30px 0;
+    text-align:justify;
+    width: 530px;
+    margin: 10px 0 10px 0;
+}
+
+.contact .container .contact-about .contact-input{
+    width: 530px;
+    height: 50px;
+    margin-top: 20px;
+    border-bottom:1px solid #36344D;
+}
+
+.contact .container .contact-about .contact-input input{
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    padding: 10px;
+    outline: none;
+}
+
+.contact .container .contact-about .contact-input input::placeholder{
+    font-size: 18px;
+    color: #9E9E9E;
+}
+
+.contact .container .contact-about .button-send{
+    width: 530px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.contact .container .contact-about .button-send button{
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    font-family: "SVN-Poppins",sans-serif;
+    background-color: #36344D;
+    color: #ffff;
+}
+
+/* **************FOOTER*************** */
+.footer{
+    width: 100%;
+    background-color:#36344D;
+    height: 400px;
+    margin-top: 100px;
+}
+
+.footer .footer-top{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #f1f1f1;
+    height: 350px;
+    
+}
+
+.footer .footer-top .container{
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin-top: 30px;
+}
+
+.footer .footer-top .container .logo{
+    font-size: 28px;
+    width: 300px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.footer .footer-top .container .logo .about{
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    word-spacing: 2px;
+}
+
+.footer .footer-top .container .logo-icon{
+    margin-top: 50px;
+}
+
+.footer .footer-top .container .logo-icon span{
+    font-size: 24px;
+    color: #f1f1f1;
+}
+
+.footer .footer-top .container .footer-list{
+    display: flex;
+    justify-content: space-between;
+    width: 800PX;
+    gap: 20px;
+}
+
+.footer .footer-top .container .footer-list .list-box{
+        font-size: 20px;
+        font-weight: 700;
+}
+
+.footer .footer-top .container .footer-list .list-box .list-box-item{ 
+        font-size: 15px;
+        margin-top: 10px;
+        font-weight: 300;
+}
+
+.footer .footer-top .container .payment-logo{
+    width: 300px;
+    margin-top: 20px;
+}
+
+.footer .footer-top .container .payment-logo img{
+    width: 100%;
+}
+
+.footer .footer-top .container .payment-logo img:nth-child(2){
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer .footer-top .container .payment-logo .logo-text{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.footer .footer-bottom{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    gap: 5px;
+    width: 100%;
+    height: 50px;
+    color: #f1f1f1;
+    border-top: 1px solid #f1f1f1;
+}
+
+.footer .footer-bottom span{
+    font-size: 24px;
+}
+
+.footer .footer-bottom .copyright{
+    padding-top: 3px;
+}

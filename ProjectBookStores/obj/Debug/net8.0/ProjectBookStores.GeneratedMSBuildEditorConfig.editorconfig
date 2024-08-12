@@ -1,0 +1,179 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ProjectBookStores
+build_property.RootNamespace = ProjectBookStores
+build_property.ProjectDir = C:\Users\On\OneDrive\Máy tính\Năm 3-HK3\LTW nâng cao 2024\ProjectBookStores-Ecommerce\ProjectBookStores\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\On\OneDrive\Máy tính\Năm 3-HK3\LTW nâng cao 2024\ProjectBookStores-Ecommerce\ProjectBookStores
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/On/OneDrive/Máy tính/Năm 3-HK3/LTW nâng cao 2024/ProjectBookStores-Ecommerce/ProjectBookStores/Areas/Admin/Views/Home/AdminProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxBZG1pblByb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/On/OneDrive/Máy tính/Năm 3-HK3/LTW nâng cao 2024/ProjectBookStores-Ecommerce/ProjectBookStores/Areas/Admin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/On/OneDrive/Máy tính/Năm 3-HK3/LTW nâng cao 2024/ProjectBookStores-Ecommerce/ProjectBookStores/Areas/Admin/Views/Home/ListAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxMaXN0QWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/On/OneDrive/Máy tính/Năm 3-HK3/LTW nâng cao 2024/ProjectBookStores-Ecommerce/ProjectBookStores/Areas/Admin/Views/Identity/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSWRlbnRpdHlcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/On/OneDrive/Máy tính/Năm 3-HK3/LTW nâng cao 2024/ProjectBookStores-Ecommerce/ProjectBookStores/Areas/Admin/Views/Identity/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSWRlbnRpdHlcUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/On/OneDrive/Máy tính/Năm 3-HK3/LTW nâng cao 2024/ProjectBookStores-Ecommerce/ProjectBookStores/Areas/Admin/Views/Order/customerOrderDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJcY3VzdG9tZXJPcmRlckRldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/On/OneDrive/Máy tính/Năm 3-HK3/LTW nâng cao 2024/ProjectBookStores-Ecommerce/ProjectBookStores/Areas/Admin/Views/Order/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/On/OneDrive/Máy tính/Năm 3-HK3/LTW nâng cao 2024/ProjectBookStores-Ecommerce/ProjectBookStores/Areas/Admin/Views/Product/bookgenreList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxib29rZ2VucmVMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/On/OneDrive/Máy tính/Năm 3-HK3/LTW nâng cao 2024/ProjectBookStores-Ecommerce/ProjectBookStores/Areas/Admin/Views/Product/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/On/OneDrive/Máy tính/Năm 3-HK3/LTW nâng cao 2024/ProjectBookStores-Ecommerce/ProjectBookStores/Areas/Admin/Views/Product/createGenre.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxjcmVhdGVHZW5yZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/On/OneDrive/Máy tính/Năm 3-HK3/LTW nâng cao 2024/ProjectBookStores-Ecommerce/ProjectBookStores/Areas/Admin/Views/Product/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/On/OneDrive/Máy tính/Năm 3-HK3/LTW nâng cao 2024/ProjectBookStores-Ecommerce/ProjectBookStores/Areas/Admin/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/On/OneDrive/Máy tính/Năm 3-HK3/LTW nâng cao 2024/ProjectBookStores-Ecommerce/ProjectBookStores/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/On/OneDrive/Máy tính/Năm 3-HK3/LTW nâng cao 2024/ProjectBookStores-Ecommerce/ProjectBookStores/Views/Cart/Address.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxBZGRyZXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/On/OneDrive/Máy tính/Năm 3-HK3/LTW nâng cao 2024/ProjectBookStores-Ecommerce/ProjectBookStores/Views/Cart/Checkout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxDaGVja291dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/On/OneDrive/Máy tính/Năm 3-HK3/LTW nâng cao 2024/ProjectBookStores-Ecommerce/ProjectBookStores/Views/Cart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/On/OneDrive/Máy tính/Năm 3-HK3/LTW nâng cao 2024/ProjectBookStores-Ecommerce/ProjectBookStores/Views/Cart/Success.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxTdWNjZXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/On/OneDrive/Máy tính/Năm 3-HK3/LTW nâng cao 2024/ProjectBookStores-Ecommerce/ProjectBookStores/Views/Customer/Infomation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcSW5mb21hdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/On/OneDrive/Máy tính/Năm 3-HK3/LTW nâng cao 2024/ProjectBookStores-Ecommerce/ProjectBookStores/Views/Customer/listOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcbGlzdE9yZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/On/OneDrive/Máy tính/Năm 3-HK3/LTW nâng cao 2024/ProjectBookStores-Ecommerce/ProjectBookStores/Views/Customer/orderDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcb3JkZXJEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/On/OneDrive/Máy tính/Năm 3-HK3/LTW nâng cao 2024/ProjectBookStores-Ecommerce/ProjectBookStores/Views/Customer/questionDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJccXVlc3Rpb25EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/On/OneDrive/Máy tính/Năm 3-HK3/LTW nâng cao 2024/ProjectBookStores-Ecommerce/ProjectBookStores/Views/FavoriteProduct/listFavoriteProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF2b3JpdGVQcm9kdWN0XGxpc3RGYXZvcml0ZVByb2R1Y3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/On/OneDrive/Máy tính/Năm 3-HK3/LTW nâng cao 2024/ProjectBookStores-Ecommerce/ProjectBookStores/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/On/OneDrive/Máy tính/Năm 3-HK3/LTW nâng cao 2024/ProjectBookStores-Ecommerce/ProjectBookStores/Views/Identity/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWRlbnRpdHlcRm9yZ290UGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/On/OneDrive/Máy tính/Năm 3-HK3/LTW nâng cao 2024/ProjectBookStores-Ecommerce/ProjectBookStores/Views/Identity/ForgotPasswordConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWRlbnRpdHlcRm9yZ290UGFzc3dvcmRDb25maXJtYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/On/OneDrive/Máy tính/Năm 3-HK3/LTW nâng cao 2024/ProjectBookStores-Ecommerce/ProjectBookStores/Views/Identity/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWRlbnRpdHlcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/On/OneDrive/Máy tính/Năm 3-HK3/LTW nâng cao 2024/ProjectBookStores-Ecommerce/ProjectBookStores/Views/Identity/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWRlbnRpdHlcUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/On/OneDrive/Máy tính/Năm 3-HK3/LTW nâng cao 2024/ProjectBookStores-Ecommerce/ProjectBookStores/Views/Identity/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWRlbnRpdHlcUmVzZXRQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/On/OneDrive/Máy tính/Năm 3-HK3/LTW nâng cao 2024/ProjectBookStores-Ecommerce/ProjectBookStores/Views/Product/allProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxhbGxQcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/On/OneDrive/Máy tính/Năm 3-HK3/LTW nâng cao 2024/ProjectBookStores-Ecommerce/ProjectBookStores/Views/Product/detailProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxkZXRhaWxQcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/On/OneDrive/Máy tính/Năm 3-HK3/LTW nâng cao 2024/ProjectBookStores-Ecommerce/ProjectBookStores/Views/Shared/AllProductTemplate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFsbFByb2R1Y3RUZW1wbGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/On/OneDrive/Máy tính/Năm 3-HK3/LTW nâng cao 2024/ProjectBookStores-Ecommerce/ProjectBookStores/Views/Shared/Components/countCart/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcY291bnRDYXJ0XERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/On/OneDrive/Máy tính/Năm 3-HK3/LTW nâng cao 2024/ProjectBookStores-Ecommerce/ProjectBookStores/Views/Shared/Components/countProduct/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcY291bnRQcm9kdWN0XERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/On/OneDrive/Máy tính/Năm 3-HK3/LTW nâng cao 2024/ProjectBookStores-Ecommerce/ProjectBookStores/Views/Shared/Components/customerAddress/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcY3VzdG9tZXJBZGRyZXNzXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/On/OneDrive/Máy tính/Năm 3-HK3/LTW nâng cao 2024/ProjectBookStores-Ecommerce/ProjectBookStores/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/On/OneDrive/Máy tính/Năm 3-HK3/LTW nâng cao 2024/ProjectBookStores-Ecommerce/ProjectBookStores/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/On/OneDrive/Máy tính/Năm 3-HK3/LTW nâng cao 2024/ProjectBookStores-Ecommerce/ProjectBookStores/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/On/OneDrive/Máy tính/Năm 3-HK3/LTW nâng cao 2024/ProjectBookStores-Ecommerce/ProjectBookStores/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ags5vtbcg5

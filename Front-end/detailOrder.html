@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="detailOrder.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>B World | I love books</title>
+</head>
+<body>
+    <header>
+        <div class="nav-top">
+            <div class="container">
+                <a class="banner" href="#">
+                    <span class="logo">B-W<i class="ri-book-2-fill"></i>RLD</span>
+                    <span class="dot">|</span>
+                    <p>We love<br>books</p>
+                </a>
+                <div class="search">
+                    <input class="" type="text" placeholder="Tìm kiếm sách ...">
+                    <button type="submit" class="ri-search-line"></button>
+                </div>
+                <div class="other">
+                    <span class="menu">
+                        <a href="#"><span class="ri-gallery-view-2"></span> DANH MỤC</a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-row">
+                                <div class="mega-menu-column">
+                                    <h2>Category 1</h2>
+                                    <ul>
+                                        <li><a href="#">Subcategory 1.1</a></li>
+                                        <li><a href="#">Subcategory 1.2</a></li>
+                                        <li><a href="#">Subcategory 1.3</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h2>Category 2</h2>
+                                    <ul>
+                                        <li><a href="#">Subcategory 2.1</a></li>
+                                        <li><a href="#">Subcategory 2.2</a></li>
+                                        <li><a href="#">Subcategory 2.3</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h2>Category 3</h2>
+                                    <ul>
+                                        <li><a href="#">Subcategory 3.1</a></li>
+                                        <li><a href="#">Subcategory 3.2</a></li>
+                                        <li><a href="#">Subcategory 3.3</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h2>Category 4</h2>
+                                    <ul>
+                                        <li><a href="#">Subcategory 4.1</a></li>
+                                        <li><a href="#">Subcategory 4.2</a></li>
+                                        <li><a href="#">Subcategory 4.3</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="text">|</span>
+                    <span class="text"><a href="#my-diaglog">TRA CỨU</a></span>
+                    <div class="dialog overlay" id="my-diaglog">
+                        <div class="dialog-body">
+                            <a class="dialog-close" href="#" style="color: #333;">&times;</a>
+                            <h3>Tra cứu đơn hàng</h3>
+                            <div class="dashed-line"></div>
+                            <p>*Khách hàng dùng mã vận đơn để tra cứu đơn hàng</p>
+                            <div class="dialog-item">
+                                <input type="text" placeholder="VD: asdc1240csas86asd6755asd9c89">
+                                <button type="submit">Tra cứu ngay</button>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <div class="user-item">
+                    <div class="icon-item">
+                        <a href="#" class="ri-shopping-bag-3-line"></a>
+                        <div class="item-number">0</div>
+                    </div>
+                    <span>|</span>
+                    <div class="icon-item">
+                        <a href="#" class="ri-heart-3-line"></a>
+                        <div class="item-number">0</div>
+                    </div>
+                    <span>|</span>
+                    <div class="dropdown-content">
+                        <a href="#" class="ri-user-3-line"></a>
+                        <div class="dropdown-list">
+                            <a href="#" class="dropdown-list-item">
+                                <span class="ri-user-3-line" style="padding-top: 10px;"></span>
+                                <div class="content">Dương Quí On<div class="content">Thành viên B-WORLD</div></div>
+                            </a>
+                            <a href="#" class="dropdown-list-item">
+                                <span class="ri-heart-3-line"></span>
+                                <div class="content">Sản phẩm yêu thích</div>
+                            </a>
+                            <a href="#" class="dropdown-list-item">
+                                <span class="ri-shopping-bag-3-line"></span>
+                                <div class="content">Đơn hàng của tôi</div>
+                            </a>
+                            <a href="#" class="dropdown-list-item">
+                                <span class="ri-logout-box-r-line"></span>
+                                <div class="content">Đăng xuất</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="order">
+            <div class="dialog-body">
+                <h3>Tra cứu đơn hàng</h3>
+                <div class="dashed-line"></div>
+                <p>*Khách hàng dùng mã vận đơn để tra cứu đơn hàng</p>
+                <div class="select-box">
+                    <form method="get" asp-action="Address" asp-controller="Cart">
+                        <div class="select-item">
+                            <label for="provinceSelect">Tỉnh/Thành Phố</label>
+                            <select id="provinceSelect" name="provinceId" class="form-control" onchange="this.form.submit()">
+                                <option value="">--Chọn Tỉnh/Thành Phố--</option>
+                                <!-- @foreach (var item in provinces)
+                                                    {
+                                                        <option value="@item.Code" selected="@(item.Code == selectedProvinceId)">@item.FullName</option>
+                                                    } -->
+                            </select>
+                        </div>
+        
+                        <div class="select-item">
+                            <label for="districtSelect">Quận/Huyện</label>
+                            <select id="districtSelect" name="districtId" class="form-control" onchange="this.form.submit()">
+                                <option value="">--Chọn Quận/Huyện--</option>
+                                <!-- @foreach (var item in districts)
+                                                    {
+                                                        <option value="@item.Code" selected="@(item.Code == selectedDistrictId)">@item.FullName</option>
+                                                    } -->
+                            </select>
+                        </div>
+        
+                        <div class="select-item">
+                            <label for="wardSelect">Phường/Xã</label>
+                            <select id="wardSelect" name="wardId" class="form-control" onchange="this.form.submit()">
+                                <option value="">--Chọn Phường/Xã--</option>
+                                <!-- @foreach (var item in wards)
+                                                    {
+                                                        <option value="@item.Code" selected="@(item.Code == selectedWardId)">@item.FullName</option>
+                                                    } -->
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="detail-box">
+                    <form method="post" asp-action="SaveAddress" asp-controller="Cart">
+                        <div class="detail-item">
+                            <label for="detailAddress">Chi Tiết Địa Chỉ:</label>
+                            <input type="text" id="detailAddress" name="DetailAddress" class="form-control"
+                                asp-for="detailAddress" />
+                        </div>
+        
+                        <input type="hidden" name="provinceId" value="@selectedProvinceId" />
+                        <input type="hidden" name="districtId" value="@selectedDistrictId" />
+                        <input type="hidden" name="wardId" value="@selectedWardId" />
+        
+                        <button type="submit">Thêm địa chỉ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="logo">
+                        <span class="logo-banner">B-W<i class="ri-book-2-fill"></i>RLD</span>
+                        <div class="about">
+                            Chúng tôi tự hào giới thiệu đến bạn một trải nghiệm mua sắm sách trực tuyến độc đáo và tiện lợi. 
+                        </div>
+                        <div class="about">
+                            Trang web của chúng tôi không chỉ là điểm đến lý tưởng cho những người yêu sách mà còn là nguồn cảm hứng cho những ai đam mê văn hóa đọc sách. 
+                        </div>
+                        <div class="logo-icon">
+                            <span class="ri-facebook-circle-fill"></span>
+                            <span class="ri-instagram-fill"></span>
+                            <span class="ri-linkedin-box-fill"></span>
+                        </div>
+                    </div>
+                    <div class="footer-list">
+                        <div class="list-box">Giới thiệu
+                            <div class="list-box-item">ITEM 1</div>
+                            <div class="list-box-item">ITEM 2</div>
+                            <div class="list-box-item">ITEM 3</div>
+                        </div>
+                        <div class="list-box">Thể loại
+                            <div class="list-box-item">ITEM 1</div>
+                            <div class="list-box-item">ITEM 2</div>
+                            <div class="list-box-item">ITEM 3</div>
+                        </div>
+                        <div class="list-box">E-books
+                            <div class="list-box-item">ITEM 1</div>
+                            <div class="list-box-item">ITEM 2</div>
+                            <div class="list-box-item">ITEM 3</div>
+                        </div>
+                        <div class="list-box">E-books
+                            <div class="list-box-item">ITEM 1</div>
+                            <div class="list-box-item">ITEM 2</div>
+                            <div class="list-box-item">ITEM 3</div>
+                        </div>
+                        <div class="list-box">Liên hệ
+                            <div class="list-box-item">
+                                <span class="ri-phone-fill"></span>
+                                0793135715
+                            </div>
+                            <div class="list-box-item">
+                                <span class="ri-time-fill"></span>
+                                Thứ 2-CN, 8:00 AM - 22:00 PM
+                            </div>
+                            <div class="list-box-item">
+                                <span class="ri-mail-fill"></span>
+                                bworld@gmail.com
+                            </div>
+                            <div class="payment-logo">
+                                <div class="logo-text">Hỗ trợ thanh toán</div>
+                                <img src="/Assets/XácNhận.png" alt="">
+                                <img src="/Assets/Hỗtrợthanhtoán.png" alt="">
+                            </div>
+                        </div>
+                    </div>                 
+                    
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span class="ri-copyright-fill"></span>
+                <div class="copyright">Copyright quyonduong@gmail.com | 2024-2025</div>
+            </div>
+        </div>
+    </footer>

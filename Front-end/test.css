@@ -1,0 +1,62 @@
+body {
+    font-family: "SVN-Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    text-align: center;
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+.buttons input[type="radio"] {
+    display: none;
+}
+
+.buttons label {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background-color: #36344D;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.buttons input[type="radio"]:checked + label {
+    background-color: #57516d;
+}
+
+.products {
+    display: none;
+}
+
+#men:checked ~ #men-products,
+#women:checked ~ #women-products {
+    display: block;
+}
+
+.products {
+    margin-top: 20px;
+}
+
+.products h2 {
+    color: #36344D;
+}
+
+.products ul {
+    list-style: none;
+    padding: 0;
+}
+
+.products ul li {
+    padding: 5px 0;
+}

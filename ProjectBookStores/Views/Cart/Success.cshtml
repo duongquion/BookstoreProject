@@ -1,0 +1,121 @@
+﻿@model ProjectBookStores.EF.Order
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Success";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .main {
+        width: 100%;
+        display: flex;
+        font-family: "SVN-Poppins", sans-serif;
+    }
+
+    .pagination {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+    }
+
+        .pagination .pagination-item {
+            width: 1200px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+            .pagination .pagination-item span {
+                font-size: 30px;
+                color: #36344D;
+            }
+
+            .pagination .pagination-item p {
+                font-size: 24px;
+                font-weight: 400;
+                color: #36344D;
+                padding-top: 3px;
+            }
+
+    .dashed-line {
+        border-top: 2px dashed #9E9E9E;
+        width: 180px;
+        margin-top: 15px;
+    }
+
+    /* success */
+    .success-order {
+        padding-left: 160px;
+        width: 1360px;
+        margin-top: 50px;
+    }
+
+        .success-order .container {
+            background-color: #fff;
+            height: 180px;
+            padding: 30px 100px;
+        }
+
+    .container h4 {
+        text-align: center;
+        font-size: 28px;
+        color: rgb(237, 74, 54);
+        margin-bottom: 20px;
+    }
+
+    .container .code-order {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 8px;
+    }
+
+    .container h5 {
+        font-size: 15px;
+        font-weight: 600px;
+        padding-top: 3px;
+    }
+
+    .container .code-order p {
+        font-size: 18px;
+        color: #36344D;
+    }
+
+    .container .code-order a {
+        color: rgb(237, 74, 54);
+        cursor: pointer;
+    }
+
+    .container p {
+        font-size: 13px;
+        color: #9E9E9E;
+        text-align: center;
+    }
+</style>
+<main>
+    <div class="pagination">
+        <div class="pagination-item">
+            <span class="ri-shopping-bag-3-fill"></span>
+            <p>GIỎ HÀNG</p>
+            <div class="dashed-line"></div>
+            <span class="ri-bank-card-2-fill"></span>
+            <p>ĐẶT HÀNG</p>
+            <div class="dashed-line"></div>
+            <span class="ri-survey-fill" style="color: rgb(237, 74, 54);" "></span>
+            <p style="color: rgb(237, 74, 54); font-weight: 700;">HOÀN THÀNH ĐƠN HÀNG</p>
+        </div>
+    </div>
+    <div class="success-order">
+        <div class="container">
+            <h4>Bạn đã đặt đơn hàng thành công!</h4>
+            <div class="line">-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</div>
+            <div class="code-order">
+                <h5>Mã tra cứu đơn hàng:</h5>
+                <p>@Model.Code</p>
+                <a asp-controller="Product" asp-action="allproduct">Tiếp tục mua sắm</a>
+            </div>
+            <p>Bạn hãy dùng đoạn mã trên để tra cứu trạng thái của đơn hàng*</p>
+        </div>
+    </div>
+</main>

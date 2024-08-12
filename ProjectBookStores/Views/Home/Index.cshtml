@@ -1,0 +1,281 @@
+﻿@model IEnumerable<ProjectBookStores.ViewModels.BannerViewModel>
+@using System.Security.Claims
+@{
+    ViewData["Title"] = "Home Page";
+    var sale = (IEnumerable<ProjectBookStores.EF.Book>)ViewBag.SaleProduct;
+    var hot = (IEnumerable<ProjectBookStores.EF.Book>)ViewBag.HotProduct;
+    var newP = (IEnumerable<ProjectBookStores.EF.Book>)ViewBag.NewProduct;
+    var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+    var userId = userIdClaim != null ? userIdClaim.Value : "unknown";
+    var formatMoney = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
+}
+<style>
+    .slider .item .content .books {
+        font-size: 50px;
+        font-weight: bold;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        letter-spacing: 10px;
+        width: 700px;
+        text-shadow: 0 9px 8px;
+        height: 100px;
+    }
+
+    .slider .item .content .title {
+        font-size: 18px;
+        word-spacing: 1.5px;
+        width: 90%;
+        height: 250px;
+        line-height: 1.5;
+    }
+
+    .slider .item .content .buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: 50px;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .slider .item .content a {
+        border: none;
+        text-decoration: none;
+        background-color: #f1f1f1;
+        font-weight: 600;
+        font-family: "SVN-Poppins", sans-serif;
+        cursor: pointer;
+        text-align: center;
+        letter-spacing: 1px;
+        color: #36344D;
+        padding-top: 15px;
+    }
+
+    .slider .item .content .buttons button {
+        background-color: transparent;
+        color: #f1f1f1;
+        border: 1px solid #f1f1f1;
+        font-weight: 600;
+        font-family: "SVN-Poppins", sans-serif;
+        text-align: center;
+        letter-spacing: 1px;
+        font-size: 15px;
+        padding: 16px;
+        width:170px;
+        height:50px;
+    }
+        
+</style>
+<main>
+    <div class="slider">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!-- FORECH -->
+                @foreach(var item in Model)
+                {
+                    <div class="swiper-slide">
+                        <div class="image-fit-cover"><img src="@item.proBanner" alt=""></div>
+                        <div class="item">
+                            <div class="content">
+                                <div class="special-author">@item.proAuthor*</div>
+                                <div class="books">@item.proName</div>
+                                <div class="title">
+                                    @item.proDescription
+                                </div>
+                                <div class="buttons">
+                                    <a class="product-list-item" asp-controller="Product" asp-action="detailProduct" asp-route-id="@item.proId" asp-route-genid="@item.genreId">CHI TIẾT</a>
+                                    <form asp-controller="Cart" asp-action="addToCart" asp-route-id="@item.proId" asp-route-cusid="@userId">
+                                        <input type="hidden" class="quantity-input" value="1" min="1" name="quantity" readonly>
+                                        <button type="submit" style="cursor:pointer;">THÊM VÀO GIỎ</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="show-books">
+                                <div class="sale">FLASH SALE SÁCH MỚI<br> KHUYẾN MÃI 30%</div>
+                                <div class="image-book">
+                                    <img src="@item.proImages" alt="">
+                                    <p>*Số lượng trong kho còn ít</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arrows">
+                            <button id="prev">
+                                <span class="ri-arrow-drop-left-line"></span>
+                            </button>
+                            <button id="next">
+                                <span class="ri-arrow-drop-right-line"></span>
+                            </button>
+                        </div>
+                    </div>
+                }
+                <!-- END -->
+            </div>
+        </div>
+    </div>
+    <!-- BENEFITS -->
+    <div class="benefit">
+        <div class="container">
+            <div class="box">
+                <span class="ri-truck-fill"></span>
+                <div class="box-text">Giao hàng nhanh, tiện</div>
+            </div>
+            <div class="box-center">
+                <span class="ri-star-fill"></span>
+                <div class="box-text">Mua nhiều ưu đãi nhiều</div>
+            </div>
+            <div class="box">
+                <span class="ri-book-open-fill"></span>
+                <div class="box-text">Sách mới mỗi ngày</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SALE-PRODUCT -->
+    <div class="product">
+        <div class="container">
+            <div class="sale-banner">
+                <img src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/flashsale/label-flashsale.svg?q=" alt="">
+                <div class="banner-text">Kết thúc trong</div>
+                <div class="banner-hour">
+                    <div class="countdown-number" id="hours">00</div>
+                    <span>:</span>
+                    <div class="countdown-number" id="minutes">00</div>
+                    <span>:</span>
+                    <div class="countdown-number" id="seconds">00</div>
+                </div>
+            </div>
+            <!-- Chố để thêm vòng lặp Foreach -->
+            <div class="product-list">
+                @foreach (var item in sale)
+                {
+                    <a class="product-list-item" asp-controller="Product" asp-action="detailProduct" asp-route-id="@item.Id" asp-route-genid="@item.GenreId">
+                        <div class="product-box">
+                            <div class="item-image">
+                                <img src="@item.Images" alt="">
+
+                            </div>
+                            <div class="item-name">@item.Name</div>
+                            <div class="item-author">@item.AuthorName</div>
+                            @using (Html.BeginForm("listFavorites", "FavoriteProduct", FormMethod.Post))
+                            {
+                                @Html.ValidationSummary(true)
+
+                                <input name="CustomerId" value="@userId" type="hidden" />
+                                <input name="BookId" value="@item.Id" type="hidden" />
+                                <div class="item-total-price">
+                                    @String.Format(formatMoney, "{0:c0}", item.Price)
+                                    <span class="ri-heart-line"></span>
+                                </div>
+                            }
+                            
+                            <div class="item-unit-price">@String.Format(formatMoney, "{0:c0}", item.IntialPrice)</div>
+                            <div class="button">
+                                <form asp-controller="Cart" asp-action="addToCart" asp-route-id="@item.Id" asp-route-cusid="@userId">
+                                    <input type="hidden" class="quantity-input" value="1" min="1" name="quantity" readonly>
+                                    <button type="submit" style="cursor:pointer;">
+                                        <span class="ri-shopping-bag-line"></span> Thêm vào giỏ
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </a>
+                }
+            </div>
+        </div>
+    </div>
+    <!-- END -->
+    <!-- NEW PRODUCT -->
+    <div class="product">
+        <div class="container">
+            <div class="new-banner">
+                <span class="ri-line-chart-line"></span>
+                <span>TOP lượt bán</span>
+            </div>
+            <div class="product-list">
+                @foreach (var item in hot)
+                {
+                    <div class="product-list-item">
+                        <div class="product-box">
+                            <div class="item-image">
+                                <img src="/Assets/4.jpg" alt="">
+                            </div>
+                            <div class="item-name">@item.</div>
+                            <div class="item-author">J.R.R. Tolkien</div>
+                            <div class="item-total-price">
+                                159.000đ
+
+                                <span class="ri-heart-line"></span>
+                            </div>
+                            <div class="item-unit-price">209.000đ</div>
+                            <div class="button">
+                                <button>
+                                    <span class="ri-shopping-bag-line"></span> Thêm vào giỏ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+    <!-- END -->
+    <!-- HOT PRODUCTS -->
+    <div class="product">
+        <div class="container">
+            <div class="new-banner">
+                <span class="ri-line-chart-line"></span>
+                <span>Sản phẩm mới nhất</span>
+            </div>
+            <div class="product-list">
+                @foreach (var item in newP)
+                {
+                    @* <div class="product-list-item">
+                        <div class="product-box">
+                            <div class="item-image">
+                                <img src="/Assets/4.jpg" alt="">
+                            </div>
+                            <div class="item-name">The lord of the rings</div>
+                            <div class="item-author">J.R.R. Tolkien</div>
+                            <div class="item-total-price">
+                                159.000đ
+
+                                <span class="ri-heart-line"></span>
+                            </div>
+                            <div class="item-unit-price">209.000đ</div>
+                            <div class="button">
+                                <button>
+                                    <span class="ri-shopping-bag-line"></span> Thêm vào giỏ
+                                </button>
+                            </div>
+                        </div>
+                    </div> *@
+                }
+            </div>
+        </div>
+    </div>
+    <!-- END -->
+    <!-- CONTACT -->
+    <div class="contact">
+        <div class="container">
+            <div class="contact-about">
+                <div class="contact-title">Giới thiệu về B-WORLD</div>
+                <div class="contact-description">
+                    Tại B-World, chúng tôi tin rằng sách không chỉ là những trang giấy mà còn là cánh cửa mở ra những thế giới vô tận của kiến thức và trí tưởng tượng. Được thành lập với niềm đam mê và sự tận tâm, B-World cam kết mang đến cho bạn trải nghiệm mua sắm sách trực tuyến tuyệt vời nhất.
+                </div>
+                <div class="contact-title">Bạn muốn liên hệ với chúng tôi?</div>
+                <div class="contact-input">
+                    <input type="text" placeholder="Tên của bạn">
+                </div>
+                <div class="contact-input">
+                    <input type="text" placeholder="Số điện thoại">
+                </div>
+                <div class="button-send">
+                    <button type="submit">Gửi cho chúng tôi</button>
+                </div>
+            </div>
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.2853681890892!2d106.59870160919937!3d10.865886280299717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752b088de30f3b%3A0xd2140740d360f705!2zxJDhuqFpIEjhu41jIE5nb-G6oWkgTmfhu68gLSBUaW4gSOG7jWMgVFAuIEhDTSAoSFVGTElUKSBDUyBIw7NjIE3DtG4!5e0!3m2!1svi!2s!4v1716124466936!5m2!1svi!2s" width="550" height="450" style="border:0;border-radius: 10px;" allowfullscreen="" loading="busy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- END -->
+</main>

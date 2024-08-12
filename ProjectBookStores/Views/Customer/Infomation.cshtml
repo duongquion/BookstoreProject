@@ -1,0 +1,14 @@
+﻿@model ProjectBookStores.EF.Customer
+@using System.Security.Claims;
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Infomation";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+    var userId = userIdClaim != null ? userIdClaim.Value : "unknown";
+}
+
+<h1>Xin chào, @Context.User.Identity.Name</h1>
+<p>Họ và tên: @Context.User.Identity.Name</p>
+<p>Email: @Model.Email</p>
+<p>Ngày sinh: @((Model.DateOfBirth ?? DateTime.MinValue).Date.ToString("dd/MM/yyyy"))</p>

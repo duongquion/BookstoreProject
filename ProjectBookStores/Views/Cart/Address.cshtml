@@ -1,0 +1,186 @@
+﻿@model ProjectBookStores.Models.AddressModel
+@{
+    var provinces = (List<ProjectBookStores.EF.Province>)ViewBag.Provinces;
+    var districts = (List<ProjectBookStores.EF.District>)ViewBag.Districts;
+    var wards = (List<ProjectBookStores.EF.Ward>)ViewBag.Wards;
+    string selectedProvinceId = ViewBag.SelectedProvinceId as string;
+    string selectedDistrictId = ViewBag.SelectedDistrictId as string;
+    string selectedWardId = ViewBag.SelectedWardId as string;
+}
+<style>
+    .dialog-body {
+        width: 600px;
+        height: 300px;
+        position: relative;
+        padding: 16px;
+        background-color: #fff;
+        color: #333;
+    }
+
+    .dashed-line {
+        border-top: 2px dashed #000;
+        width: 100%;
+        padding-bottom: 8px;
+    }
+
+    .dialog-body h3 {
+        text-align: center;
+        padding-bottom: 6px;
+    }
+
+    .dialog-body p {
+        font-size: 13px;
+        color: #555;
+        padding-bottom: 20px;
+    }
+
+    .dialog-close {
+        position: absolute;
+        top: 6px;
+        right: 6px;
+        text-decoration: none;
+        font-size: 24px;
+    }
+
+    .overlay {
+        background-color: rgba(0,0,0,0.2);
+    }
+
+    .select-box {
+        display: flex;
+        gap: 22px;
+        padding-bottom: 20px;
+    }
+
+        .select-box form {
+            display: flex;
+            gap: 10px;
+            width: 10px;
+        }
+
+            .select-box form label {
+                padding-bottom: 6px;
+                font-size: 15px;
+            }
+
+        .select-box .select-item select {
+            padding: 10px;
+            color: #36344D;
+            background-color: #eee;
+            width: 180px;
+        }
+
+        .select-box .select-item option {
+            padding: 10px;
+            font-size: 13px;
+            border-radius: 0px;
+        }
+
+    .detail-box .detail-item {
+        display: flex;
+        gap: 23px;
+    }
+
+        .detail-box .detail-item label {
+            font-size: 15px;
+            padding-top: 8px;
+        }
+
+        .detail-box .detail-item input {
+            padding: 10px;
+            width: 430px;
+            border: 1px solid #36344D;
+        }
+
+    .detail-box button {
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
+        padding: 10px;
+        cursor: pointer;
+        background-color: #36344D;
+        color: #fff;
+    }
+
+    main {
+        font-family: "SVN-Poppins", sans-serif;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+    }
+
+        main .order {
+            width: 100%;
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+        }
+</style>
+@if (ViewBag.CheckAddress == null)
+{
+    <main>
+        <div class="order">
+            <div class="dialog-body">
+                <h3>Tra cứu đơn hàng</h3>
+                <div class="dashed-line"></div>
+                <p>*Khách hàng dùng mã vận đơn để tra cứu đơn hàng</p>
+                <div class="select-box">
+                    <form method="get" asp-action="Address" asp-controller="Cart">
+                        <div class="select-item">
+                            <label for="provinceSelect">Tỉnh/Thành Phố</label>
+                            <select id="provinceSelect" name="provinceId" class="form-control" onchange="this.form.submit()">
+                                <option value="">--Chọn Tỉnh/Thành Phố--</option>
+                                @foreach (var item in provinces)
+                                {
+                                    <option value="@item.Code" selected="@(item.Code == selectedProvinceId)">@item.FullName</option>
+                                }
+                            </select>
+                        </div>
+
+                        <div class="select-item">
+                            <label for="districtSelect">Quận/Huyện</label>
+                            <select id="districtSelect" name="districtId" class="form-control" onchange="this.form.submit()">
+                                <option value="">--Chọn Quận/Huyện--</option>
+                                @foreach (var item in districts)
+                                {
+                                    <option value="@item.Code" selected="@(item.Code == selectedDistrictId)">@item.FullName</option>
+                                }
+                            </select>
+                        </div>
+
+                        <div class="select-item">
+                            <label for="wardSelect">Phường/Xã</label>
+                            <select id="wardSelect" name="wardId" class="form-control" onchange="this.form.submit()">
+                                <option value="">--Chọn Phường/Xã--</option>
+                                @foreach (var item in wards)
+                                {
+                                    <option value="@item.Code" selected="@(item.Code == selectedWardId)">@item.FullName</option>
+                                }
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="detail-box">
+                    <form method="post" asp-action="SaveAddress" asp-controller="Cart">
+                        <div class="detail-item">
+                            <label for="detailAddress">Chi Tiết Địa Chỉ:</label>
+                            <input type="text" id="detailAddress" name="DetailAddress" class="form-control"
+                                   asp-for="detailAddress" />
+                        </div>
+
+                        <input type="hidden" name="provinceId" value="@selectedProvinceId" />
+                        <input type="hidden" name="districtId" value="@selectedDistrictId" />
+                        <input type="hidden" name="wardId" value="@selectedWardId" />
+
+                        <button type="submit">Thêm địa chỉ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+}
+else
+{
+    <p>Bạn đã điền địa chỉ</p>
+}

@@ -1,0 +1,167 @@
+﻿@model ProjectBookStores.Models.LoginModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    main .container {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        color: #36344D;
+    }
+
+    .form .content {
+        width: 100%;
+        height: 400px;
+    }
+
+    .container .sign-in {
+        max-width: 1200px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sign-in .content .logo {
+        font-size: 28px;
+        font-weight: bold;
+        letter-spacing: 3px;
+    }
+
+    .sign-in .content .description {
+        font-size: 24px;
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .sign-in .content .other {
+        padding-top: 10px;
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    .form {
+        width: 100%;
+        height: 100%;
+        border: 2px solid #36344D;
+        border-radius: 15px;
+        color: #36344D;
+        background-color: #f1f1f1;
+    }
+
+        .form .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+            .form .box a {
+                text-decoration: none;
+                color: #DC5F00;
+            }
+
+            .form .box .title {
+                font-size: 28px;
+                font-weight: 700;
+                margin: 10px 0 5px 0;
+            }
+
+        .form .input-1 {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form .text-danger {
+            color: red;
+            padding-top: 8px;
+        }
+
+        .form .input-1 input {
+            border: 1px solid #36344D;
+            padding: 10px;
+            width: 430px;
+            border-radius: 0px;
+            font-size: 15px;
+            padding-left: 20px;
+        }
+
+            .form .input-1 input::placeholder {
+                font-size: 15px;
+            }
+
+        .form .btn {
+            padding-top: 30px;
+            font-size: 15px;
+        }
+
+            .form .btn button {
+                width: 120px;
+                padding: 10px;
+                background-color: #36344D;
+                color: #f1f1f1;
+                border-radius: 10px;
+            }
+
+        .form p {
+            margin-top: 10px;
+        }
+</style>
+<main>
+    <div class="container">
+        <div class="sign-in">
+            <div class="content">
+                <div class="logo">B-W<i class="ri-book-2-fill"></i>RLD</div>
+                <div class="description">
+                    B-WORLD nơi mang tới kiến thức, tư liệu bổ ích cùng với tuổi thơ của mọi lứa tuổi
+                </div>
+                <div class="other">
+                    <span class="ri-contacts-line"></span>
+                    <p>Hỗ trợ mọi người đăng ký và sử dụng Website</p>
+                </div>
+                <div class="other">
+                    <span class="ri-tv-2-line"></span>
+                    <p>Tự tin là Website có giao diện dễ sử dụng đối với mọi lứa tuổi</p>
+                </div>
+                <div class="other">
+                    <span class="ri-health-book-line"></span>
+                    <p>Tài nguyên sách được làm mới và cập nhật liên tục, mỗi ngày</p>
+                </div>
+                <div class="other">
+                    <span class="ri-filter-line"></span>
+                    <p>Hệ thống tìm kiếm và lọc sản phẩm vượt trội</p>
+                </div>
+
+            </div>
+            <div class="form">
+                <form asp-controller="Identity" asp-action="Login" method="post">
+                    <div class="box">
+                        <div class="title">Đăng nhập với B-WORLD</div>
+                        <div class="slogan">Nếu bạn là thành viên mới của B-WORLD, <a href="/Customer/Sign-up">đăng ký ngay!</a></div>
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="input-1">
+                            <input asp-for="email" type="text" placeholder="Nhập địa chỉ Email..." autofocus>
+                            <span asp-validation-for="email" class="text-danger"></span>
+                        </div>
+                        <div class="input-1">
+                            <input asp-for="password" type="password" placeholder="Nhập mật khẩu...">
+                            <span asp-validation-for="password" class="text-danger"></span>
+                        </div>
+                        <div class="btn">
+                            <button>ĐĂNG NHẬP</button>
+                        </div>
+                        <p>Bạn không đăng nhập được? <a href="/Customer/ForgotPassword">Quên mật khẩu</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>

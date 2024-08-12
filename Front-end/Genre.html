@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Genre.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>B World | I love books</title>
+</head>
+<body>
+    <header>
+        <div class="nav-top">
+            <div class="container">
+                <div class="banner">
+                    <span class="logo">B-W<i class="ri-book-2-fill"></i>RLD</span>
+                    <span class="dot">|</span>
+                    <p>We love<br>books</p>
+                </div>
+                <div class="search">
+                    <input class="" type="text" placeholder="Tìm kiếm sách ...">
+                    <i class="ri-search-line"></i>
+                </div>
+                <div class="other">
+                    <span class="menu">
+                        <a href="#"><span class="ri-gallery-view-2"></span> DANH MỤC</a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-row">
+                                <div class="mega-menu-column">
+                                    <h2>Category 1</h2>
+                                    <ul>
+                                        <li><a href="#">Subcategory 1.1</a></li>
+                                        <li><a href="#">Subcategory 1.2</a></li>
+                                        <li><a href="#">Subcategory 1.3</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h2>Category 2</h2>
+                                    <ul>
+                                        <li><a href="#">Subcategory 2.1</a></li>
+                                        <li><a href="#">Subcategory 2.2</a></li>
+                                        <li><a href="#">Subcategory 2.3</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h2>Category 3</h2>
+                                    <ul>
+                                        <li><a href="#">Subcategory 3.1</a></li>
+                                        <li><a href="#">Subcategory 3.2</a></li>
+                                        <li><a href="#">Subcategory 3.3</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h2>Category 4</h2>
+                                    <ul>
+                                        <li><a href="#">Subcategory 4.1</a></li>
+                                        <li><a href="#">Subcategory 4.2</a></li>
+                                        <li><a href="#">Subcategory 4.3</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="text">|</span>
+                    <span class="text"><a href="#">NEWS</a></span>
+                </div>
+                <div class="user-item">
+                    <div class="icon-item">
+                        <a href="#" class="ri-shopping-cart-2-line"></a>
+                        <div class="item-number">0</div>
+                    </div>
+                    <span>|</span>
+                    <div class="icon-item">
+                        <a href="#" class="ri-heart-line"></a>
+                        <div class="item-number">0</div>
+                    </div>
+                    <span>|</span>
+                    <div class="dropdown-content">
+                        <a href="#" class="ri-user-3-line"></a>
+                        <div class="dropdown-list">
+                            <a href="#" class="dropdown-list-item">
+                                <span class="ri-user-3-line" style="padding-top: 10px;"></span>
+                                <div class="content">Dương Quí On<div class="content">Thành viên B-WORLD</div></div>
+                            </a>
+                            <a href="#" class="dropdown-list-item">
+                                <span class="ri-heart-3-line"></span>
+                                <div class="content">Sản phẩm yêu thích</div>
+                            </a>
+                            <a href="#" class="dropdown-list-item">
+                                <span class="ri-shopping-bag-3-line"></span>
+                                <div class="content">Đơn hàng của tôi</div>
+                            </a>
+                            <a href="#" class="dropdown-list-item">
+                                <span class="ri-logout-box-r-line"></span>
+                                <div class="content">Đăng xuất</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="pagination">
+            <div class="container">
+                <div class="content">
+                    <span class="ri-home-line"></span>
+                    <div class="name">Trang chủ</div>
+                </div>
+                <div class="content">
+                    <span class="ri-book-line"></span>
+                    <div class="name">Thể loại</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="filter">
+            <div class="container">
+                <div class="box">
+                    <div class="content-name">Sắp xếp theo:</div>
+                    <div class="dropdown-content">
+                        <div class="dropdown-name">Chọn sắp xếp<span class="ri-arrow-drop-down-line"></span></div>
+                        <div class="dropdown-list">
+                            <a href="#" class="dropdown-list-item">
+                                <span class="ri-arrow-up-down-line"></span>
+                                <div class="content">Từ A - Z</div>
+                            </a>
+                            <a href="#" class="dropdown-list-item">
+                                <span class="ri-arrow-up-down-line"></span>
+                                <div class="content">Từ Z - A</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="content-name">Giá sản phẩm:</div>
+                    <div class="dropdown-content">
+                        <div class="dropdown-name">Chọn giá<span class="ri-arrow-drop-down-line"></span></div>
+                        <div class="dropdown-list">
+                            <a href="#" class="dropdown-list-item">
+                                <span class="ri-money-dollar-box-line"></span>
+                                <div class="content">Từ 100.000đ</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="content-name">Thể loại:</div>
+                    <div class="dropdown-content">
+                        <div class="dropdown-name">Chọn Thể loại<span class="ri-arrow-drop-down-line"></span></div>
+                        <div class="dropdown-list">
+                            <a href="#" class="dropdown-list-item">
+                                <span class="ri-aliens-line"></span>
+                                <div class="content">Khoa học</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="content-name">Ngôn ngữ:</div>
+                    <div class="dropdown-content">
+                        <div class="dropdown-name">Ngôn ngữ<span class="ri-arrow-drop-down-line"></span></div>
+                        <div class="dropdown-list">
+                            <a href="#" class="dropdown-list-item">
+                                <span class="ri-earth-line"></span>
+                                <div class="content">Tiếng Việt</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="container">
+                <div class="product-list">
+                    <a class="product-list-item" href="#">
+                        <div class="product-box">
+                            <div class="item-image">
+                                <img src="/Assets/4.jpg" alt="">
+                            </div>
+                            <div class="item-name">The lord of the rings</div>
+                            <div class="item-author">J.R.R. Tolkien</div>
+                            <div class="item-total-price">159.000đ
+                             
+                                <span class="ri-heart-line"></span>
+                            </div>
+                            <div class="item-unit-price">209.000đ</div>
+                            <div class="button">
+                                <button>
+                                    <span class="ri-shopping-bag-line"></span> Thêm vào giỏ
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="product-list-item">
+                        <div class="product-box">
+                            <div class="item-image">
+                                <img src="/Assets/4.jpg" alt="">
+                            </div>
+                            <div class="item-name">The lord of the rings</div>
+                            <div class="item-author">J.R.R. Tolkien</div>
+                            <div class="item-total-price">159.000đ
+                             
+                                <span class="ri-heart-line"></span>
+                            </div>
+                            <div class="item-unit-price">209.000đ</div>
+                            <div class="button">
+                                <button>
+                                    <span class="ri-shopping-bag-line"></span> Thêm vào giỏ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-box">
+                            <div class="item-image">
+                                <img src="/Assets/4.jpg" alt="">
+                            </div>
+                            <div class="item-name">The lord of the rings</div>
+                            <div class="item-author">J.R.R. Tolkien</div>
+                            <div class="item-total-price">159.000đ
+                             
+                                <span class="ri-heart-line"></span>
+                            </div>
+                            <div class="item-unit-price">209.000đ</div>
+                            <div class="button">
+                                <button>
+                                    <span class="ri-shopping-bag-line"></span> Thêm vào giỏ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-box">
+                            <div class="item-image">
+                                <img src="/Assets/4.jpg" alt="">
+                            </div>
+                            <div class="item-name">The lord of the rings</div>
+                            <div class="item-author">J.R.R. Tolkien</div>
+                            <div class="item-total-price">159.000đ
+                             
+                                <span class="ri-heart-line"></span>
+                            </div>
+                            <div class="item-unit-price">209.000đ</div>
+                            <div class="button">
+                                <button>
+                                    <span class="ri-shopping-bag-line"></span> Thêm vào giỏ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-box">
+                            <div class="item-image">
+                                <img src="/Assets/4.jpg" alt="">
+                            </div>
+                            <div class="item-name">The lord of the rings</div>
+                            <div class="item-author">J.R.R. Tolkien</div>
+                            <div class="item-total-price">159.000đ
+                             
+                                <span class="ri-heart-line"></span>
+                            </div>
+                            <div class="item-unit-price">209.000đ</div>
+                            <div class="button">
+                                <button>
+                                    <span class="ri-shopping-bag-line"></span> Thêm vào giỏ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-box">
+                            <div class="item-image">
+                                <img src="/Assets/4.jpg" alt="">
+                            </div>
+                            <div class="item-name">The lord of the rings</div>
+                            <div class="item-author">J.R.R. Tolkien</div>
+                            <div class="item-total-price">159.000đ
+                             
+                                <span class="ri-heart-line"></span>
+                            </div>
+                            <div class="item-unit-price">209.000đ</div>
+                            <div class="button">
+                                <button>
+                                    <span class="ri-shopping-bag-line"></span> Thêm vào giỏ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-box">
+                            <div class="item-image">
+                                <img src="/Assets/4.jpg" alt="">
+                            </div>
+                            <div class="item-name">The lord of the rings</div>
+                            <div class="item-author">J.R.R. Tolkien</div>
+                            <div class="item-total-price">159.000đ
+                             
+                                <span class="ri-heart-line"></span>
+                            </div>
+                            <div class="item-unit-price">209.000đ</div>
+                            <div class="button">
+                                <button>
+                                    <span class="ri-shopping-bag-line"></span> Thêm vào giỏ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-box">
+                            <div class="item-image">
+                                <img src="/Assets/4.jpg" alt="">
+                            </div>
+                            <div class="item-name">The lord of the rings</div>
+                            <div class="item-author">J.R.R. Tolkien</div>
+                            <div class="item-total-price">159.000đ
+                             
+                                <span class="ri-heart-line"></span>
+                            </div>
+                            <div class="item-unit-price">209.000đ</div>
+                            <div class="button">
+                                <button>
+                                    <span class="ri-shopping-bag-line"></span> Thêm vào giỏ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-box">
+                            <div class="item-image">
+                                <img src="/Assets/4.jpg" alt="">
+                            </div>
+                            <div class="item-name">The lord of the rings</div>
+                            <div class="item-author">J.R.R. Tolkien</div>
+                            <div class="item-total-price">159.000đ
+                             
+                                <span class="ri-heart-line"></span>
+                            </div>
+                            <div class="item-unit-price">209.000đ</div>
+                            <div class="button">
+                                <button>
+                                    <span class="ri-shopping-bag-line"></span> Thêm vào giỏ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                <div class="product-list-item">
+                        <div class="product-box">
+                            <div class="item-image">
+                                <img src="/Assets/4.jpg" alt="">
+                            </div>
+                            <div class="item-name">The lord of the rings</div>
+                            <div class="item-author">J.R.R. Tolkien</div>
+                            <div class="item-total-price">159.000đ
+                             
+                                <span class="ri-heart-line"></span>
+                            </div>
+                            <div class="item-unit-price">209.000đ</div>
+                            <div class="button">
+                                <button>
+                                    <span class="ri-shopping-bag-line"></span> Thêm vào giỏ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="logo">
+                        <span class="logo-banner">B-W<i class="ri-book-2-fill"></i>RLD</span>
+                        <div class="about">
+                            Chúng tôi tự hào giới thiệu đến bạn một trải nghiệm mua sắm sách trực tuyến độc đáo và tiện lợi. 
+                        </div>
+                        <div class="about">
+                            Trang web của chúng tôi không chỉ là điểm đến lý tưởng cho những người yêu sách mà còn là nguồn cảm hứng cho những ai đam mê văn hóa đọc sách. 
+                        </div>
+                        <div class="logo-icon">
+                            <span class="ri-facebook-circle-fill"></span>
+                            <span class="ri-instagram-fill"></span>
+                            <span class="ri-linkedin-box-fill"></span>
+                        </div>
+                    </div>
+                    <div class="footer-list">
+                        <div class="list-box">Giới thiệu
+                            <div class="list-box-item">ITEM 1</div>
+                            <div class="list-box-item">ITEM 2</div>
+                            <div class="list-box-item">ITEM 3</div>
+                        </div>
+                        <div class="list-box">Thể loại
+                            <div class="list-box-item">ITEM 1</div>
+                            <div class="list-box-item">ITEM 2</div>
+                            <div class="list-box-item">ITEM 3</div>
+                        </div>
+                        <div class="list-box">E-books
+                            <div class="list-box-item">ITEM 1</div>
+                            <div class="list-box-item">ITEM 2</div>
+                            <div class="list-box-item">ITEM 3</div>
+                        </div>
+                        <div class="list-box">E-books
+                            <div class="list-box-item">ITEM 1</div>
+                            <div class="list-box-item">ITEM 2</div>
+                            <div class="list-box-item">ITEM 3</div>
+                        </div>
+                        <div class="list-box">Liên hệ
+                            <div class="list-box-item">
+                                <span class="ri-phone-fill"></span>
+                                0793135715
+                            </div>
+                            <div class="list-box-item">
+                                <span class="ri-time-fill"></span>
+                                Thứ 2-CN, 8:00 AM - 22:00 PM
+                            </div>
+                            <div class="list-box-item">
+                                <span class="ri-mail-fill"></span>
+                                bworld@gmail.com
+                            </div>
+                            <div class="payment-logo">
+                                <div class="logo-text">Hỗ trợ thanh toán</div>
+                                <img src="/Assets/XácNhận.png" alt="">
+                                <img src="/Assets/Hỗtrợthanhtoán.png" alt="">
+                            </div>
+                        </div>
+                    </div>                 
+                    
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span class="ri-copyright-fill"></span>
+                <div class="copyright">Copyright quyonduong@gmail.com | 2024-2025</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,185 @@
+﻿@model IEnumerable<ProjectBookStores.ViewModels.ProductViewModel>
+@using X.PagedList
+@using X.PagedList.Mvc.Core
+@using System.Security.Claims
+@{
+    ViewData["Title"] = "allProduct";
+    Layout = "~/Views/Shared/AllProductTemplate.cshtml";
+    var formatMoney = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
+    var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+    var userId = userIdClaim != null ? userIdClaim.Value : "unknown";
+}
+<style>
+    .pagination-container {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+        .pagination-container ul {
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .pagination-container li {
+            display: inline;
+            margin: 0 5px;
+        }
+
+        .pagination-container a, .pagination-container span {
+            color: #36344D;
+            padding: 8px 16px;
+            text-decoration: none;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+            .pagination-container a:hover {
+                background-color: #ddd;
+            }
+
+        .pagination-container .active span {
+            background-color: #36344D;
+            color: white;
+            border: 1px solid #36344D;
+        }
+
+    .product .container .product-list .product-list-item img {
+        width: 100%;
+        height:400px;
+    }
+
+</style>
+@section pagination {
+    <div class="pagination">
+        <div class="container">
+            <div class="content">
+                <span class="ri-home-line"></span>
+                <div class="name">Trang chủ</div>
+            </div>
+            <div class="content">
+                <span class="ri-book-line"></span>
+                <div class="name">Tất cả sách</div>
+            </div>
+        </div>
+    </div>
+}
+<div class="filter">
+    <div class="container">
+        <div class="box">
+            <div class="content-name">Sắp xếp theo:</div>
+            <div class="dropdown-content">
+                <div class="dropdown-name">Chọn sắp xếp<span class="ri-arrow-drop-down-line"></span></div>
+                <div class="dropdown-list">
+                    <a href="@Url.Action("allProduct", "Product", new { sortOrder = "Name_asc" })" class="dropdown-list-item">
+                        <span class="ri-arrow-up-down-line"></span>
+                        <div class="content">Từ A - Z</div>
+                    </a>
+                    <a href="@Url.Action("allProduct", "Product", new { sortOrder = "Name_desc" })" class="dropdown-list-item">
+                        <span class="ri-arrow-up-down-line"></span>
+                        <div class="content">Từ Z - A</div>
+                    </a>
+                    <a href="@Url.Action("allProduct", "Product", new { sortOrder = "Newest" })" class="dropdown-list-item">
+                        <span class="ri-arrow-up-down-line"></span>
+                        <div class="content">Mới nhất</div>
+                    </a>
+                    <a href="@Url.Action("allProduct", "Product", new { sortOrder = "Oldest" })" class="dropdown-list-item">
+                        <span class="ri-arrow-up-down-line"></span>
+                        <div class="content">Cũ nhất</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content-name">Giá sản phẩm:</div>
+            <div class="dropdown-content">
+                <div class="dropdown-name">Chọn giá<span class="ri-arrow-drop-down-line"></span></div>
+                <div class="dropdown-list">
+                    <a href="@Url.Action("allProduct", "Product", new { sortPrice = "Under100VND" })" class="dropdown-list-item">
+                        <span></span>
+                        <div class="content">Dưới 100.000đ</div>
+                    </a>
+                    <a href="@Url.Action("allProduct", "Product", new { sortPrice = "Between100VNDand250VND" })" class="dropdown-list-item">
+                        <span></span>
+                        <div class="content">Từ 100.000đ đến 250.000đ</div>
+                    </a>
+                    <a href="@Url.Action("allProduct", "Product", new { sortPrice = "Between250VNDand500VND" })" class="dropdown-list-item">
+                        <span></span>
+                        <div class="content">Từ 250.000đ đến 500.000đ</div>
+                    </a>
+                    <a href="@Url.Action("allProduct", "Product", new { sortPrice = "Over500VND" })" class="dropdown-list-item">
+                        <span></span>
+                        <div class="content">Trên 500.000đ</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content-name">Thể loại:</div>
+            <div class="dropdown-content">
+                <div class="dropdown-name">Chọn Thể loại<span class="ri-arrow-drop-down-line"></span></div>
+                <div class="dropdown-list">
+                    @foreach (var genre in ViewBag.Genres)
+                    {
+                        <a href="@Url.Action("allProduct", new {sortPrice = ViewBag.CurrentSortPrice, sortOrder = ViewBag.CurrentSortOrder, genre = genre, language = ViewBag.CurrentLanguage })" class="dropdown-list-item">
+                            <span class="ri-earth-line"></span>
+                            <div class="content">@genre</div>
+                        </a>
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content-name">Ngôn ngữ:</div>
+            <div class="dropdown-content">
+                <div class="dropdown-name">Ngôn ngữ<span class="ri-arrow-drop-down-line"></span></div>
+                <div class="dropdown-list">
+                    @foreach (var lang in ViewBag.Language)
+                    {
+                        <a href="@Url.Action("allProduct", new {sortPrice = ViewBag.CurrentSortPrice, sortOrder = ViewBag.CurrentSortOrder, genre = ViewBag.CurrentGenre, language = lang })" class="dropdown-list-item">
+                            <span class="ri-earth-line"></span>
+                            <div class="content">@lang</div>
+                        </a>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="product">
+    <div class="container">
+        <div class="product-list">
+            @foreach (var item in Model)
+            {
+                <a class="product-list-item" asp-controller="Product" asp-action="detailProduct" asp-route-id="@item.ProId" asp-route-genid="@item.GenreId">
+                    <div class="product-box">
+                        <div class="item-image">
+                            <img src="@item.Images" alt="">
+                        </div>
+                        <div class="item-name">@item.ProName</div>
+                        <div class="item-author">@item.AuthorName</div>
+                        <div class="item-total-price">
+                            @String.Format(formatMoney, "{0:c0}", item.Price)
+                            <span class="ri-heart-line"></span>
+                        </div>
+                        <div class="item-unit-price">@String.Format(formatMoney, "{0:c0}", item.IntialPrice)</div>
+                        <div class="button">
+                            <form asp-controller="Cart" asp-action="addToCart" asp-route-id="@item.ProId" asp-route-cusid="@userId">
+                                <input type="hidden" class="quantity-input" value="1" min="1" name="quantity" readonly>
+                                <button type="submit" style="cursor:pointer;">
+                                    <span class="ri-shopping-bag-line"></span> Thêm vào giỏ
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </a>
+            }
+        </div>
+    </div>
+</div>
+<br />
+<div class="pagination-container">
+    @Html.PagedListPager((IPagedList)Model, page => Url.Action("allProduct",
+            new { page, sortOrder = ViewBag.CurrentSortOrder, language = ViewBag.CurrentLanguage, genre = ViewBag.CurrentGenre, sortPrice = ViewBag.CurrentSortPrice, searchString = ViewBag.CurrentSearchString }))
+</div>

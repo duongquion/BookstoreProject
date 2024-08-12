@@ -1,0 +1,101 @@
+﻿@model IEnumerable<ProjectBookStores.ViewModels.detailOrderViewModel>
+@{
+    ViewData["Title"] = "orderDetail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    /* success */
+    .success-order {
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+        .success-order .container {
+            background-color: #fff;
+            height: 320px;
+            padding: 30px 50px;
+            width: 680px;
+        }
+
+            .success-order .container a {
+                text-decoration: none;
+                background-color: #36344D;
+                padding: 10px;
+                margin-left: 222px;
+                color: #fff;
+                font-size: 15px;
+            }
+
+    .container h4 {
+        text-align: center;
+        font-size: 28px;
+        color: #36344D;
+        margin-bottom: 30px;
+    }
+
+    .success-order .container ul {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 13px;
+    }
+
+    .container h5 {
+        font-size: 15px;
+        font-weight: 600px;
+        padding-top: 3px;
+    }
+
+    .container .code-order p {
+        font-size: 18px;
+        color: #36344D;
+    }
+
+    .container .code-order a {
+        color: rgb(237, 74, 54);
+    }
+
+    .container p {
+        font-size: 13px;
+        color: #9E9E9E;
+        text-align: center;
+    }
+</style>
+@if (Model != null && Model.Any())
+{
+    var item = Model.First();
+    <main>
+        <div class="success-order">
+            <div class="container">
+                <h4>Thông tin đơn hàng</h4>
+                <ul>
+                    <li>Mã đơn hàng</li>
+                    <li>@item.orderCode</li>
+                </ul>
+                <ul>
+                    <li>Khách hàng</li>
+                    <li>@item.customerName</li>
+                </ul>
+                <ul>
+                    <li>Ngày đặt hàng</li>
+                    <li>@item.orderDate</li>
+                </ul>
+                <ul>
+                    <li>Trạng thái</li>
+                    <li>@(item.Status ? "Đã xác nhận" : "Chưa xác nhận")</li>
+                </ul>
+                <ul>
+                    <li>Trạng thái vận chuyển</li>
+                    <li>@item.orderStatus</li>
+                </ul>
+                <a asp-controller="Customer" asp-action="questionDelete" >HỦY ĐƠN HÀNG</a>
+            </div>
+        </div>
+    </main>
+}
+else
+{
+    <p>Không tìm thấy đơn hàng.</p>
+    <a asp-controller="Home" asp-action="Index">Tiếp tục mua sắm</a>
+}

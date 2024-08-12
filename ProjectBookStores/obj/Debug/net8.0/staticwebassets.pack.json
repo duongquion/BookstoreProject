@@ -1,0 +1,1253 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\On\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ProjectBookStores.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ProjectBookStores.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Admin\\css\\app.css",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Admin\\css\\app.css.map",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\css\\app.css.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Admin\\fonts\\.gitkeep",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\fonts\\.gitkeep"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Admin\\img\\avatars\\avatar-2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\img\\avatars\\avatar-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Admin\\img\\avatars\\avatar-3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\img\\avatars\\avatar-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Admin\\img\\avatars\\avatar-4.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\img\\avatars\\avatar-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Admin\\img\\avatars\\avatar-5.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\img\\avatars\\avatar-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Admin\\img\\avatars\\avatar.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\img\\avatars\\avatar.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Admin\\img\\icons\\icon-48x48.png",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\img\\icons\\icon-48x48.png"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Admin\\img\\photos\\unsplash-1.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\img\\photos\\unsplash-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Admin\\img\\photos\\unsplash-2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\img\\photos\\unsplash-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Admin\\img\\photos\\unsplash-3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\img\\photos\\unsplash-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Admin\\js\\app.js",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\js\\app.js"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Admin\\js\\app.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\js\\app.js.LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Admin\\js\\app.js.map",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\js\\app.js.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Customer\\Assets\\1.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Customer\\Assets\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Customer\\Assets\\2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Customer\\Assets\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Customer\\Assets\\3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Customer\\Assets\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Customer\\Assets\\4.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Customer\\Assets\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Customer\\Assets\\5.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Customer\\Assets\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Customer\\Assets\\6.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Customer\\Assets\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Customer\\Assets\\Hỗtrợthanhtoán.png",
+      "PackagePath": "staticwebassets\\Assets\\Customer\\Assets\\Hỗtrợthanhtoán.png"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Customer\\Assets\\XácNhận-removebg-preview.png",
+      "PackagePath": "staticwebassets\\Assets\\Customer\\Assets\\XácNhận-removebg-preview.png"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Customer\\Assets\\XácNhận.png",
+      "PackagePath": "staticwebassets\\Assets\\Customer\\Assets\\XácNhận.png"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Customer\\Assets\\book.png",
+      "PackagePath": "staticwebassets\\Assets\\Customer\\Assets\\book.png"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Customer\\Assets\\giftbox.svg",
+      "PackagePath": "staticwebassets\\Assets\\Customer\\Assets\\giftbox.svg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Customer\\Assets\\hrptbook.png",
+      "PackagePath": "staticwebassets\\Assets\\Customer\\Assets\\hrptbook.png"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Customer\\Assets\\inbox.png",
+      "PackagePath": "staticwebassets\\Assets\\Customer\\Assets\\inbox.png"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Customer\\Assets\\label-flashsale.svg",
+      "PackagePath": "staticwebassets\\Assets\\Customer\\Assets\\label-flashsale.svg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Customer\\Assets\\letter-b.png",
+      "PackagePath": "staticwebassets\\Assets\\Customer\\Assets\\letter-b.png"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Customer\\font-poppins\\Poppins-Black.woff",
+      "PackagePath": "staticwebassets\\Assets\\Customer\\font-poppins\\Poppins-Black.woff"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Customer\\font-poppins\\Poppins-Black.woff2",
+      "PackagePath": "staticwebassets\\Assets\\Customer\\font-poppins\\Poppins-Black.woff2"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Customer\\font-poppins\\Poppins-Bold.woff",
+      "PackagePath": "staticwebassets\\Assets\\Customer\\font-poppins\\Poppins-Bold.woff"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Customer\\font-poppins\\Poppins-Bold.woff2",
+      "PackagePath": "staticwebassets\\Assets\\Customer\\font-poppins\\Poppins-Bold.woff2"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Customer\\font-poppins\\Poppins-ExtraBold.woff",
+      "PackagePath": "staticwebassets\\Assets\\Customer\\font-poppins\\Poppins-ExtraBold.woff"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Customer\\font-poppins\\Poppins-ExtraBold.woff2",
+      "PackagePath": "staticwebassets\\Assets\\Customer\\font-poppins\\Poppins-ExtraBold.woff2"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Customer\\font-poppins\\Poppins-ExtraLight.woff",
+      "PackagePath": "staticwebassets\\Assets\\Customer\\font-poppins\\Poppins-ExtraLight.woff"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Customer\\font-poppins\\Poppins-ExtraLight.woff2",
+      "PackagePath": "staticwebassets\\Assets\\Customer\\font-poppins\\Poppins-ExtraLight.woff2"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Customer\\font-poppins\\Poppins-Light.woff",
+      "PackagePath": "staticwebassets\\Assets\\Customer\\font-poppins\\Poppins-Light.woff"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Customer\\font-poppins\\Poppins-Light.woff2",
+      "PackagePath": "staticwebassets\\Assets\\Customer\\font-poppins\\Poppins-Light.woff2"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Customer\\font-poppins\\Poppins-Medium.woff",
+      "PackagePath": "staticwebassets\\Assets\\Customer\\font-poppins\\Poppins-Medium.woff"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Customer\\font-poppins\\Poppins-Medium.woff2",
+      "PackagePath": "staticwebassets\\Assets\\Customer\\font-poppins\\Poppins-Medium.woff2"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Customer\\font-poppins\\Poppins-Regular.woff",
+      "PackagePath": "staticwebassets\\Assets\\Customer\\font-poppins\\Poppins-Regular.woff"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Customer\\font-poppins\\Poppins-Regular.woff2",
+      "PackagePath": "staticwebassets\\Assets\\Customer\\font-poppins\\Poppins-Regular.woff2"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Customer\\font-poppins\\Poppins-SemiBold.woff",
+      "PackagePath": "staticwebassets\\Assets\\Customer\\font-poppins\\Poppins-SemiBold.woff"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Customer\\font-poppins\\Poppins-SemiBold.woff2",
+      "PackagePath": "staticwebassets\\Assets\\Customer\\font-poppins\\Poppins-SemiBold.woff2"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Customer\\font-poppins\\Poppins-Thin.woff",
+      "PackagePath": "staticwebassets\\Assets\\Customer\\font-poppins\\Poppins-Thin.woff"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Customer\\font-poppins\\Poppins-Thin.woff2",
+      "PackagePath": "staticwebassets\\Assets\\Customer\\font-poppins\\Poppins-Thin.woff2"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Customer\\font-poppins\\demo.html",
+      "PackagePath": "staticwebassets\\Assets\\Customer\\font-poppins\\demo.html"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Customer\\font-poppins\\stylesheet.css",
+      "PackagePath": "staticwebassets\\Assets\\Customer\\font-poppins\\stylesheet.css"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\anna_karenina.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\anna_karenina.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\anna_karenina_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\anna_karenina_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\atomic_habits.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\atomic_habits.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\atomic_habits_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\atomic_habits_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\atomic_habits_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\atomic_habits_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\ben_khong_chong.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\ben_khong_chong.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\ben_khong_chong_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\ben_khong_chong_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\ben_khong_chong_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\ben_khong_chong_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\brave_new_world.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\brave_new_world.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\brave_new_world_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\brave_new_world_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\brave_new_world_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\brave_new_world_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\canh_dong_bat_tan.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\canh_dong_bat_tan.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\canh_dong_bat_tan_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\canh_dong_bat_tan_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\canh_dong_bat_tan_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\canh_dong_bat_tan_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\chi_pheo.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\chi_pheo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\chi_pheo_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\chi_pheo_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\chi_pheo_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\chi_pheo_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\chiec_luoc_nga.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\chiec_luoc_nga.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\chiec_luoc_nga_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\chiec_luoc_nga_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\chiec_luoc_nga_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\chiec_luoc_nga_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\crime_and_punishment.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\crime_and_punishment.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\crime_and_punishment_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\crime_and_punishment_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\crime_and_punishment_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\crime_and_punishment_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\dac_nhan_tam.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\dac_nhan_tam.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\dac_nhan_tam.webp",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\dac_nhan_tam.webp"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\dac_nhan_tam_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\dac_nhan_tam_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\dac_nhan_tam_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\dac_nhan_tam_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\dat_rung_phuong_nam.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\dat_rung_phuong_nam.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\dat_rung_phuong_nam_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\dat_rung_phuong_nam_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\dat_rung_phuong_nam_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\dat_rung_phuong_nam_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\doc_vi_bat_ky_ai.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\doc_vi_bat_ky_ai.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\doc_vi_bat_ky_ai_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\doc_vi_bat_ky_ai_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\doc_vi_bat_ky_ai_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\doc_vi_bat_ky_ai_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\don_quixote.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\don_quixote.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\don_quixote_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\don_quixote_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\don_quixote_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\don_quixote_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\dune.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\dune.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\dune_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\dune_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\dune_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\dune_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\educated.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\educated.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\educated_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\educated_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\frankenstein.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\frankenstein.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\frankenstein_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\frankenstein_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\frankenstein_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\frankenstein_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\ghi_chep_phap_y.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\ghi_chep_phap_y.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\ghi_chep_phap_y_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\ghi_chep_phap_y_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\giong_to.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\giong_to.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\giong_to_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\giong_to_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\giong_to_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\giong_to_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\great_expectations.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\great_expectations.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\great_expectations_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\great_expectations_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\great_expectations_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\great_expectations_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\harry_potter_and_the_philosophers_stone.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\harry_potter_and_the_philosophers_stone.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\harry_potter_and_the_philosophers_stone_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\harry_potter_and_the_philosophers_stone_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\harry_potter_and_the_philosophers_stone_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\harry_potter_and_the_philosophers_stone_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\ho_so_tam_ly.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\ho_so_tam_ly.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\ho_so_tam_ly.jpg.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\ho_so_tam_ly.jpg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\ho_so_tam_ly_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\ho_so_tam_ly_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\jane_eyre.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\jane_eyre.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\jane_eyre_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\jane_eyre_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\les_miserables.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\les_miserables.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\les_miserables_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\les_miserables_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\life_of_pi.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\life_of_pi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\life_of_pi_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\life_of_pi_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\life_of_pi_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\life_of_pi_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\mat_biec.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\mat_biec.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\mat_biec_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\mat_biec_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\mat_biec_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\mat_biec_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\meo_tien_sinh.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\meo_tien_sinh.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\meo_tien_sinh_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\meo_tien_sinh_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\moby_dick.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\moby_dick.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\moby_dick_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\moby_dick_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\nguoi_ban_la_lung.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\nguoi_ban_la_lung.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\nguoi_ban_la_lung_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\nguoi_ban_la_lung_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\nguoi_ban_la_lung_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\nguoi_ban_la_lung_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\noi_buon_chien_tranh.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\noi_buon_chien_tranh.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\noi_buon_chien_tranh_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\noi_buon_chien_tranh_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\noi_buon_chien_tranh_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\noi_buon_chien_tranh_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\noi_chuyen_la_ban_nang.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\noi_chuyen_la_ban_nang.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\noi_chuyen_la_ban_nang_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\noi_chuyen_la_ban_nang_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\norwegian_wood.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\norwegian_wood.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\norwegian_wood_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\norwegian_wood_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\norwegian_wood_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\norwegian_wood_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\oliver_twist.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\oliver_twist.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\oliver_twist_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\oliver_twist_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\oliver_twist_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\oliver_twist_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\pride_and_prejudice.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\pride_and_prejudice.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\pride_and_prejudice_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\pride_and_prejudice_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\pride_and_prejudice_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\pride_and_prejudice_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\roi_loan_nhan_cach.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\roi_loan_nhan_cach.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\roi_loan_nhan_cach_1.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\roi_loan_nhan_cach_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\roi_loan_nhan_cach_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\roi_loan_nhan_cach_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\rung_xa_nu.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\rung_xa_nu.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\rung_xa_nu_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\rung_xa_nu_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\sapiens.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\sapiens.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\sapiens_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\sapiens_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\sapiens_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\sapiens_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\tat_den.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\tat_den.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\tat_den_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\tat_den_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\tat_den_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\tat_den_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\the_alchemist.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\the_alchemist.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\the_alchemist.webp",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\the_alchemist.webp"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\the_alchemist_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\the_alchemist_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\the_alchemist_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\the_alchemist_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\the_brothers_karamazov.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\the_brothers_karamazov.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\the_brothers_karamazov_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\the_brothers_karamazov_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\the_brothers_karamazov_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\the_brothers_karamazov_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\the_catcher_in_the_rye.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\the_catcher_in_the_rye.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\the_catcher_in_the_rye_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\the_catcher_in_the_rye_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\the_catcher_in_the_rye_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\the_catcher_in_the_rye_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\the_count_of_monte_cristo.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\the_count_of_monte_cristo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\the_count_of_monte_cristo_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\the_count_of_monte_cristo_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\the_count_of_monte_cristo_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\the_count_of_monte_cristo_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\the_great_gatsby.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\the_great_gatsby.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\the_great_gatsby_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\the_great_gatsby_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\the_great_gatsby_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\the_great_gatsby_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\the_hobbit.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\the_hobbit.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\the_hobbit_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\the_hobbit_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\the_kite_runner.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\the_kite_runner.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\the_kite_runner_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\the_kite_runner_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\the_kite_runner_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\the_kite_runner_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\the_lord_of_the_rings.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\the_lord_of_the_rings.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\the_lord_of_the_rings_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\the_lord_of_the_rings_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\the_lord_of_the_rings_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\the_lord_of_the_rings_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\the_odyssey.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\the_odyssey.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\the_odyssey_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\the_odyssey_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\the_silence_of_the_lambs.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\the_silence_of_the_lambs.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\the_silence_of_the_lambs_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\the_silence_of_the_lambs_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\the_silence_of_the_lambs_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\the_silence_of_the_lambs_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\to_kill_a_mockingbird_1.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\to_kill_a_mockingbird_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\to_kill_a_mockingbird_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\to_kill_a_mockingbird_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\to_kill_a_mockingbird_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\to_kill_a_mockingbird_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\toi_thay_hoa_vang_tren_co_xanh.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\toi_thay_hoa_vang_tren_co_xanh.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\toi_thay_hoa_vang_tren_co_xanh_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\toi_thay_hoa_vang_tren_co_xanh_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\toi_thay_hoa_vang_tren_co_xanh_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\toi_thay_hoa_vang_tren_co_xanh_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\truyen_kieu.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\truyen_kieu.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\truyen_kieu_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\truyen_kieu_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\truyen_kieu_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\truyen_kieu_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\tuoi_tho_du_doi.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\tuoi_tho_du_doi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\tuoi_tho_du_doi_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\tuoi_tho_du_doi_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\tuoi_tho_du_doi_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\tuoi_tho_du_doi_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\vo_nhat.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\vo_nhat.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\vo_nhat_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\vo_nhat_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\vo_nhat_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\vo_nhat_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\war_and_peace.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\war_and_peace.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\war_and_peace_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\war_and_peace_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\war_and_peace_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\war_and_peace_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\wuthering_heights.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\wuthering_heights.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\wuthering_heights_2.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\wuthering_heights_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\Assets\\Product\\img\\wuthering_heights_3.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Product\\img\\wuthering_heights_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\css\\Home.css",
+      "PackagePath": "staticwebassets\\css\\Home.css"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\js\\Cascade.js",
+      "PackagePath": "staticwebassets\\js\\Cascade.js"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\js\\Home.js",
+      "PackagePath": "staticwebassets\\js\\Home.js"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\On\\OneDrive\\Máy tính\\Năm 3-HK3\\LTW nâng cao 2024\\ProjectBookStores-Ecommerce\\ProjectBookStores\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ProjectBookStores.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ProjectBookStores.props",
+      "PackagePath": "build\\ProjectBookStores.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ProjectBookStores.props",
+      "PackagePath": "buildMultiTargeting\\ProjectBookStores.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ProjectBookStores.props",
+      "PackagePath": "buildTransitive\\ProjectBookStores.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

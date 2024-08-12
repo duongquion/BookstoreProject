@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewData["Title"] = "questionDelete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .success-order {
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+        .success-order .container {
+            background-color: #fff;
+            height: 320px;
+            padding: 30px 50px;
+            width: 460px;
+        }
+
+            .success-order .container .box select {
+                height: 50px;
+                border: 2px solid #36344D;
+                padding: 10px;
+                font-size: 18px;
+            }
+
+            .success-order .container .box option {
+                padding: 10px;
+            }
+
+            .success-order .container .box {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+                .success-order .container .box a {
+                    text-decoration: none;
+                    margin-left: auto;
+                    margin-top: 100px;
+                    background-color: #36344D;
+                    padding: 10px;
+                    color: #fff;
+                }
+
+    .container h4 {
+        text-align: center;
+        font-size: 28px;
+        color: #36344D;
+        margin-bottom: 30px;
+    }
+</style>
+<main>
+    <div class="success-order">
+        <div class="container">
+            <h4>Lý do hủy đơn hàng</h4>
+            <div class="box">
+                <select name="" id="">
+                    <option value="">Hàng bị không đúng với mô tả</option>
+                    <option value="">Tôi không thích sản phẩm này</option>
+                    <option value="">Tôi không muốn đặt nữa</option>
+                    <option value="">Khác</option>
+                </select>
+                <a asp-controller="Customer" asp-action="deleteOrder" asp-route-id="@ViewBag.Order.Id" method="get">HỦY ĐƠN HÀNG</a>
+            </div>
+
+        </div>
+    </div>
+</main>
+

@@ -1,0 +1,100 @@
+﻿@model ProjectBookStores.EF.Book
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Create New Book</h2>
+
+<form asp-action="Create" asp-controller="Product" method="post" enctype="multipart/form-data">
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="AuthorName" class="control-label"></label>
+        <input asp-for="AuthorName" class="form-control" />
+        <span asp-validation-for="AuthorName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="IntialPrice" class="control-label"></label>
+        <input asp-for="IntialPrice" class="form-control" />
+        <span asp-validation-for="IntialPrice" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Price" class="control-label"></label>
+        <input asp-for="Price" class="form-control" />
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Language" class="control-label"></label>
+        <input asp-for="Language" class="form-control" />
+        <span asp-validation-for="Language" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="PublishingYear" class="control-label"></label>
+        <input asp-for="PublishingYear" class="form-control" />
+        <span asp-validation-for="PublishingYear" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Description" class="control-label"></label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="GenreId" class="control-label"></label>
+        @Html.DropDownList("GenreId", (SelectList)ViewBag.GenreId, "-- Select Genre --", new { @class = "form-control" })
+        <span asp-validation-for="GenreId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="PublisherId" class="control-label"></label>
+        @Html.DropDownList("PublisherId", (SelectList)ViewBag.PublisherId, "-- Select Publisher --", new { @class = "form-control" })
+        <span asp-validation-for="PublisherId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="mainImage">Main Image (Required)</label>
+        <input type="file" id="mainImage" name="files" class="form-control" />
+        <span asp-validation-for="Images" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="moreImages">Additional Images</label>
+        <input type="file" id="moreImages" name="files" multiple class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>
+
+<div>
+    <a asp-action="createGenre">Create Genre</a>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+<script>
+    document.getElementById('add-form').addEventListener('click', function () {
+        var bookFormsContainer = document.getElementById('book-forms');
+        var newForm = bookFormsContainer.querySelector('.book-form').cloneNode(true);
+        newForm.querySelectorAll('input, select').forEach(function (input) {
+            input.value = '';
+        });
+        bookFormsContainer.appendChild(newForm);
+    });
+</script>
+

@@ -1,0 +1,451 @@
+﻿@using System.Security.Claims
+@model IEnumerable<ProjectBookStores.Models.CartModel>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+    var userId = userIdClaim != null ? userIdClaim.Value : "unknown";
+    var formatMoney = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
+}
+<style>
+    .main {
+        width: 100%;
+        display: flex;
+        font-family: "SVN-Poppins", sans-serif;
+    }
+
+    .pagination {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+    }
+
+        .pagination .pagination-item {
+            width: 1200px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+            .pagination .pagination-item span {
+                font-size: 30px;
+                color: #36344D;
+            }
+
+            .pagination .pagination-item p {
+                font-size: 24px;
+                font-weight: 400;
+                color: #36344D;
+                padding-top: 3px;
+            }
+
+    .dashed-line {
+        border-top: 2px dashed #9E9E9E;
+        width: 180px;
+        margin-top: 15px;
+    }
+    /* success */
+    .success-order {
+        padding-left: 160px;
+        width: 1360px;
+        margin-top: 50px;
+    }
+
+        .success-order .container {
+            background-color: #fff;
+            height: 180px;
+            padding: 30px 100px;
+        }
+
+    .container h4 {
+        text-align: center;
+        font-size: 28px;
+        color: rgb(237, 74, 54);
+        margin-bottom: 20px;
+    }
+
+    .container .code-order {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 8px;
+    }
+
+    .container h5 {
+        font-size: 15px;
+        font-weight: 600px;
+        padding-top: 3px;
+    }
+
+    .container .code-order p {
+        font-size: 18px;
+        color: #36344D;
+    }
+
+    .container p {
+        font-size: 13px;
+        color: #9E9E9E;
+        text-align: center;
+    }
+    /* Body-Cart */
+    .cart {
+        width: 100%;
+    }
+
+    .cart-body {
+        padding-left: 160px;
+        width: 1360px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+        .cart-body .cart-left {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+            .cart-body .cart-left .cart-title ul {
+                display: flex;
+                justify-content: space-between;
+                padding: 20px;
+                background-color: #fff;
+            }
+
+            .cart-body .cart-left .cart-title p {
+                font-size: 20px;
+                font-weight: 600;
+            }
+
+            .cart-body .cart-left .cart-item {
+                width: 100%;
+                height: auto;
+            }
+
+                .cart-body .cart-left .cart-item ul {
+                    display: flex;
+                    justify-content: space-between;
+                    background-color: #fff;
+                    padding: 20px;
+                    border-bottom: 1px solid #f1f1f1;
+                }
+
+                .cart-body .cart-left .cart-item .getProduct {
+                    display: flex;
+                    gap: 20px;
+                    height: auto;
+                }
+
+                    .cart-body .cart-left .cart-item .getProduct p {
+                        width: 90px;
+                        font-size: 18px;
+                        font-weight: 300;
+                    }
+
+                .cart-body .cart-left .cart-item p {
+                    font-size: 20px;
+                    font-weight: 400;
+                    padding-top: 8px;
+                    width: 90px;
+                }
+
+                .cart-body .cart-left .cart-item .bin {
+                    padding-top: 7px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+
+                    .cart-body .cart-left .cart-item .bin a {
+                        margin-left: auto;
+                    }
+
+                .cart-body .cart-left .cart-item a {
+                    text-decoration: none;
+                    color: #36344D;
+                }
+
+                .cart-body .cart-left .cart-item span {
+                    font-size: 24px;
+                }
+
+                .cart-body .cart-left .cart-item img {
+                    width: 120px;
+                    height: 150px;
+                    object-fit: cover;
+                }
+
+    .quantity-container {
+        display: flex;
+        height: 40px;
+        align-items: center;
+        border: 1px solid #36344D;
+        width: 125px;
+        border-radius: 5px;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+
+    .quantity-button {
+        width: 40px;
+        height: 40px;
+        color: #36344D;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        background-color: transparent;
+    }
+
+        .quantity-button:first-child {
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        .quantity-button:last-child {
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        .quantity-button:hover {
+            background-color: #36344D;
+            color: #ffffff;
+        }
+
+    .quantity-input {
+        width: 45px;
+        height: 38px;
+        text-align: center;
+        font-size: 16px;
+        color: #36344D;
+        border: none;
+        margin: 0;
+        pointer-events: none;
+    }
+
+        .quantity-input:focus {
+            outline: none;
+        }
+
+    .cart-body .cart-right {
+        width: 30%;
+        background-color: #fff;
+        height: 265px;
+    }
+
+        .cart-body .cart-right .cart-item {
+            padding: 25px;
+        }
+
+            .cart-body .cart-right .cart-item h3 {
+                font-size: 24px;
+                font-weight: 700;
+                margin-bottom: 30px;
+            }
+
+            .cart-body .cart-right .cart-item .title {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 30px;
+            }
+
+                .cart-body .cart-right .cart-item .title p {
+                    font-weight: 600;
+                    font-size: 14px;
+                    color: #555;
+                    padding-top: 3px;
+                }
+
+                .cart-body .cart-right .cart-item .title h4 {
+                    font-size: 20px;
+                    color: rgb(237, 74, 54);
+                }
+
+            .cart-body .cart-right .cart-item .line {
+                color: #9E9E9E;
+            }
+
+            .cart-body .cart-right .cart-item .checkout {
+                margin-top: 30px;
+                width: 310px;
+                padding: 15px 25px;
+                font-size: 15px;
+                font-weight: 600;
+                background-color: #36344D;
+                text-align: center;
+            }
+
+                .cart-body .cart-right .cart-item .checkout a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+
+    .success-order-null {
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+        .success-order-null .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+            .success-order-null .container img {
+                width: 250px;
+                height: 250px;
+                object-fit: cover;
+            }
+
+            .success-order-null .container p {
+                color: #9E9E9E;
+                margin-top: 20px;
+            }
+
+            .success-order-null .container a {
+                text-decoration: none;
+                padding: 15px 30px;
+                font-size: 15px;
+                background-color: #36344D;
+                color: #fff;
+                margin-top: 20px;
+            }
+</style>
+@if (Model != null && Model.Any())
+{
+    <main>
+        <div class="pagination">
+            <div class="pagination-item">
+                <span class="ri-shopping-bag-3-fill" style="color: rgb(237, 74, 54);"></span>
+                <p style="color: rgb(237, 74, 54); font-weight: 700;">GIỎ HÀNG</p>
+                <div class="dashed-line"></div>
+                <span class="ri-bank-card-2-fill"></span>
+                <p>ĐẶT HÀNG</p>
+                <div class="dashed-line"></div>
+                <span class="ri-survey-fill"></span>
+                <p>HOÀN THÀNH ĐƠN HÀNG</p>
+            </div>
+        </div>
+        <div class="cart-body">
+            <div class="cart-left">
+                <div class="cart-title">
+                    <ul>
+                        <li><p>Tổng số sản phẩm</p></li>
+                        <li><p>Giá sản phẩm</p></li>
+                        <li><p>Số lượng</p></li>
+                        <li><p>Thành tiền</p></li>
+                    </ul>
+                </div>
+                <div class="cart">
+                    <div class="cart-item">
+                        @foreach (var item in Model)
+                        {
+                            <ul data-pro-id="@item.proId" data-cus-id="@item.cusId">
+                                <li class="getProduct"><img src="@item.proImage" alt=""><p>@item.proName</p></li>
+                                <li><p>@String.Format("{0:N0}đ", item.proPrice)</p></li>
+                                <li>
+                                    <div class="quantity-container">
+                                        <button type="button" class="quantity-button" onclick="updateQuantity(this, -1)">-</button>
+                                        <input type="text" class="quantity-input" value="@item.proQuantity" min="1" name="quantity" readonly>
+                                        <button type="button" class="quantity-button" onclick="updateQuantity(this, 1)">+</button>
+                                    </div>
+                                </li>
+                                <li class="bin">
+                                    <p class="item-final-price">@String.Format("{0:N0}đ", item.finalPrice)</p>
+                                    <a asp-action="removeCart" asp-route-id="@item.proId"><span class="ri-delete-bin-5-fill"></span></a>
+                                </li>
+                            </ul>
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="cart-right">
+                <div class="cart-item">
+                    <div class="big-title"><h3>Đơn hàng</h3></div>
+                    <div class="title">
+                        <p>Tổng giá trị sản phẩm</p>
+                        <h4 class="grand-total">@String.Format("{0:N0}đ", Model.Sum(x => x.finalPrice))</h4>
+                    </div>
+                    <div class="line">----------------------------------------------------------</div>
+                    <div class="checkout">
+                        <a asp-action="Checkout" asp-controller="Cart">THANH TOÁN</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+}
+else
+{
+    <main>
+        <div class="success-order-null">
+            <div class="container">
+                <img src="/Assets/Customer/Assets/inbox.png" alt="">
+                <p>Bạn chưa có sản phẩm nào trong giỏ hàng!</p>
+                <a asp-controller="Product" asp-action="allProduct">Tiếp tục mua sắm</a>
+            </div>
+        </div>
+    </main>
+}
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        function formatCurrency(value) {
+            // Định dạng số thành dạng "90.000đ"
+            return value.toLocaleString('vi-VN') + 'đ';
+        }
+
+        function updateGrandTotal() {
+            var grandTotal = 0;
+            $(".cart-item ul").each(function () {
+                var finalPriceText = $(this).find(".item-final-price").text().replace(/[^0-9]+/g, "");
+                var finalPrice = parseFloat(finalPriceText);
+                grandTotal += finalPrice;
+            });
+            $(".cart-right .title .grand-total").text(formatCurrency(grandTotal));
+        }
+
+        window.updateQuantity = function (button, delta) {
+            var $row = $(button).closest("ul");
+            var $quantityInput = $row.find(".quantity-input");
+            var quantity = parseInt($quantityInput.val()) + delta;
+            if (quantity < 1) return;
+
+            var proId = $row.data("pro-id");
+            var cusId = $row.data("cus-id");
+
+            $.ajax({
+                url: '@Url.Action("UpdateCartQuantity", "Cart")',
+                type: 'POST',
+                data: {
+                    proId: proId,
+                    cusId: cusId,
+                    quantity: quantity
+                },
+                success: function (response) {
+                    $quantityInput.val(quantity);
+                    var priceText = $row.find("li:eq(1) p").text().replace(/[^0-9]+/g, "");
+                    var price = parseFloat(priceText);
+                    var finalPrice = price * quantity;
+                    $row.find(".item-final-price").text(formatCurrency(finalPrice));
+                    updateGrandTotal();
+                },
+                error: function () {
+                    alert("Đã xảy ra lỗi khi cập nhật giỏ hàng.");
+                }
+            });
+        };
+    });
+</script>
+
+
+
+

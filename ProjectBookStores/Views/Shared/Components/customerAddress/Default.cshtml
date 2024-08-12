@@ -1,0 +1,5 @@
+﻿@model IEnumerable<ProjectBookStores.ViewModels.customerAddressViewModel>
+@foreach (var item in Model)
+{
+    <p>@(item.detailAddress + " " + item.Wards + " " + item.Districs + " " + item.Provinces)</p>
+}
